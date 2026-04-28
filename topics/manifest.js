@@ -22,4 +22,11 @@ window.ASSET_MANAGEMENT_TOPICS = [
     file: "topics/kapitel-4-mathematische-statistische-grundlagen.html",
     description: "Durchschnittswerte, Verzinsung, Duration, Risiko und Korrelation."
   },
+  {
+  id: "kapitel-5",
+  short: "Kapitel 5",
+  title: "Kapitel 5 · Grundlagen der Portfoliotheorie",
+  file: "topics/kapitel-5-grundlagen-der-portfoliotheorie.html",
+  description: "Markowitz, Diversifikation, Effizienzkurve, Tobin-Separation, CML, CAPM und APT."
+},
 ];
