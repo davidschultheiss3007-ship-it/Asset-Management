@@ -1,0 +1,1641 @@
+<!-- MODULE_CHAPTER_START: kapitel-5 | Kapitel 5 · Grundlagen der Portfoliotheorie | slides=30 -->
+<!-- Dieses Topic ist ein HTML-Fragment: keine <html>, <head>, <body> Tags einfügen. -->
+
+<section
+  id="kapitel-5-slide-01"
+  class="slide-title module-slide chapter-start"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-chapter-start="true"
+  data-screen-label="01 Title"
+  data-slide-label="01 Title"
+  data-slide-index="1"
+  data-slide-total="30">
+  <div class="chrome-top">
+    <span>HBW · Asset Management</span>
+    <span>Kapitel 5 <span class="dot">●</span></span>
+  </div>
+
+  <div class="big-mark">§5</div>
+
+  <div class="stack">
+    <div class="eyebrow">Lernzusammenfassung · Kapitel 5</div>
+    <h1 class="display" style="margin-top:24px;">
+      Grundlagen der<br/>
+      <em style="font-style:italic; color:var(--accent);">Portfoliotheorie.</em>
+    </h1>
+    <p class="sub" style="margin-top:32px; max-width:1180px;">
+      Markowitz · Diversifikation · Effizienzkurve · Tobin-Separation · CML · CAPM · APT.
+    </p>
+  </div>
+
+  <div class="meta">
+    <div class="block">
+      <div class="k">Kurs</div>
+      <div class="v">Asset Management</div>
+    </div>
+    <div class="block">
+      <div class="k">Kapitel</div>
+      <div class="v">5 · Grundlagen der Portfoliotheorie</div>
+    </div>
+    <div class="block">
+      <div class="k">Umfang</div>
+      <div class="v">8 Themenblöcke · 30 Folien</div>
+    </div>
+  </div>
+
+  <div class="chrome-bot">
+    <span>Lernzusammenfassung</span>
+    <span>Hochschule · Stand April 2026</span>
+  </div>
+</section>
+
+<section
+  id="kapitel-5-slide-02"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="02 Agenda"
+  data-slide-label="02 Agenda"
+  data-slide-index="2"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Inhalt</span><span>02</span></div>
+
+  <div class="content-head" style="top:150px;">
+    <div class="eyebrow">Agenda</div>
+    <h2 class="title-lg" style="margin-top:14px;">Acht Bausteine dieses Kapitels.</h2>
+  </div>
+
+  <div class="content-body" style="top:360px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:24px;">
+      <div class="card" style="padding:24px;">
+        <div class="card-eyebrow">Teil 01</div>
+        <div class="card-title" style="font-size:28px;">Markowitz</div>
+        <div class="card-body" style="font-size:18px;">Moderne Portfoliotheorie, 2-Wertpapier-Portfolio und Diversifikation.</div>
+      </div>
+      <div class="card" style="padding:24px;">
+        <div class="card-eyebrow">Teil 02</div>
+        <div class="card-title" style="font-size:28px;">Effizienzkurve</div>
+        <div class="card-body" style="font-size:18px;">Minimum-Varianz-Portfolio, effiziente Portfolios und Korrelation.</div>
+      </div>
+      <div class="card" style="padding:24px;">
+        <div class="card-eyebrow">Teil 03</div>
+        <div class="card-title" style="font-size:28px;">Leerverkäufe</div>
+        <div class="card-body" style="font-size:18px;">Long/Short-Positionen und Verlängerung der Effizienzkurve.</div>
+      </div>
+      <div class="card" style="padding:24px;">
+        <div class="card-eyebrow">Teil 04</div>
+        <div class="card-title" style="font-size:28px;">Risikoarten</div>
+        <div class="card-body" style="font-size:18px;">Gemeinsames, unabhängiges, systematisches und idiosynkratisches Risiko.</div>
+      </div>
+      <div class="card" style="padding:24px;">
+        <div class="card-eyebrow">Teil 05</div>
+        <div class="card-title" style="font-size:28px;">MVP-Bestimmung</div>
+        <div class="card-body" style="font-size:18px;">Gewichtung im Minimum-Varianz-Portfolio und kritische Würdigung.</div>
+      </div>
+      <div class="card" style="padding:24px;">
+        <div class="card-eyebrow">Teil 06</div>
+        <div class="card-title" style="font-size:28px;">Tobin-Separation</div>
+        <div class="card-body" style="font-size:18px;">Risikoloses Asset, Kapitalmarktlinie und Marktportfolio.</div>
+      </div>
+      <div class="card" style="padding:24px;">
+        <div class="card-eyebrow">Teil 07</div>
+        <div class="card-title" style="font-size:28px;">CAPM</div>
+        <div class="card-body" style="font-size:18px;">Systematisches Risiko, Beta-Faktor, CML und SML.</div>
+      </div>
+      <div class="card" style="padding:24px;">
+        <div class="card-eyebrow">Teil 08</div>
+        <div class="card-title" style="font-size:28px;">APT</div>
+        <div class="card-body" style="font-size:18px;">Multifaktormodelle, Arbitrage Pricing Theory und Vergleich zum CAPM.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Kapitel 5 · Grundlagen der Portfoliotheorie</span><span>02 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-03"
+  class="slide-divider module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="03 Divider Markowitz"
+  data-slide-label="03 Divider Markowitz"
+  data-slide-index="3"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Teil 01</span><span>03 <span class="dot">●</span></span></div>
+  <div class="big-num">01</div>
+  <div class="sub-label" style="top:180px;">Diversifikation nach Markowitz</div>
+  <div class="big-title">
+    Risiko senken<br/>
+    <em style="color:var(--accent-2);">durch Kombination.</em>
+  </div>
+  <div class="chrome-bot"><span>Markowitz · 2-Wertpapier-Portfolio · Portfoliorisiko</span><span>03 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-04"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="04 Markowitz Grundlagen"
+  data-slide-label="04 Markowitz Grundlagen"
+  data-slide-index="4"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Markowitz · Grundidee</span><span>04</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Diversifikation nach Markowitz</div>
+    <h2 class="title-md" style="margin-top:18px;">Nicht nur Rendite zählt — auch die gemeinsame Bewegung der Assets.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:64px;">
+      <div>
+        <div class="label">Harry Max Markowitz</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">•</span><span>* 24. August 1927, † 22. Juni 2023.</span></li>
+          <li><span class="marker">•</span><span>Begründer der modernen Portfoliotheorie.</span></li>
+          <li><span class="marker">•</span><span>Wirtschaftsnobelpreis 1990 zusammen mit Merton H. Miller und William Sharpe.</span></li>
+          <li><span class="marker">•</span><span>Beitrag: mikroökonomische Theorie des Portfoliomanagements für individuelle Vermögenshalter.</span></li>
+          <li><span class="marker">•</span><span>Kerngedanke: Wertpapiere im Portfolio sollen nicht alle hoch miteinander korreliert sein.</span></li>
+        </ul>
+        <div class="callout mt-32">
+          <span class="tag">Fazit</span>
+          Die Portfoliotheorie liefert Handlungsanweisungen zur bestmöglichen Kombination von Anlagealternativen für ein optimales Portfolio.
+        </div>
+      </div>
+
+      <div>
+        <div class="label">Ausgangsbeispiel: Aktie und Corporate Bond</div>
+        <table class="grid-tbl mt-16" style="font-size:20px;">
+          <thead>
+            <tr><th></th><th>Aktie</th><th>Bond</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="k">Erwartete Rendite</td><td>16,0%</td><td>6,0%</td></tr>
+            <tr><td class="k">Standardabweichung</td><td>14,0%</td><td>11,0%</td></tr>
+            <tr><td class="k">Korrelation</td><td colspan="2">ρ<sub>A,B</sub> = 0,5</td></tr>
+          </tbody>
+        </table>
+        <ul class="clean mt-24">
+          <li><span class="marker">w</span><span>Anteil am Portfolio, mit w<sub>A</sub> + w<sub>B</sub> = 1.</span></li>
+          <li><span class="marker">ρ</span><span>Korrelation zwischen Aktie A und Bond B: −1 &lt; ρ &lt; +1.</span></li>
+          <li><span class="marker">A</span><span>Wenn w<sub>A</sub> = 1, dann E(r<sub>P</sub>) = E(r<sub>A</sub>) und σ<sub>P</sub> = σ<sub>A</sub>.</span></li>
+          <li><span class="marker">B</span><span>Wenn w<sub>A</sub> = 0, dann E(r<sub>P</sub>) = E(r<sub>B</sub>) und σ<sub>P</sub> = σ<sub>B</sub>.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Markowitz · Ausgangsportfolio</span><span>04 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-05"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="05 Portfolioformeln"
+  data-slide-label="05 Portfolioformeln"
+  data-slide-index="5"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Portfoliorendite &amp; Portfoliorisiko</span><span>05</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">2-Wertpapier-Portfolio und n-Wertpapier-Portfolio</div>
+    <h2 class="title-md" style="margin-top:18px;">Die Rendite ist linear — das Risiko hängt zusätzlich von Kovarianz und Korrelation ab.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="label">Erwartungswert 2-WP-Portfolio</div>
+        <div class="formula-box mt-16">
+          E(r<sub>P</sub>) = w<sub>A</sub> · E(r<sub>A</sub>) + w<sub>B</sub> · E(r<sub>B</sub>)
+        </div>
+
+        <div class="label mt-32">Risiko 2-WP-Portfolio</div>
+        <div class="formula-box mt-16" style="font-size:22px;">
+          σ<sub>P</sub><sup>2</sup> =
+          w<sub>A</sub><sup>2</sup> · σ<sub>A</sub><sup>2</sup>
+          + w<sub>B</sub><sup>2</sup> · σ<sub>B</sub><sup>2</sup>
+          + 2 · w<sub>A</sub> · w<sub>B</sub> · cov(A,B)
+        </div>
+        <div class="formula-box mt-16" style="font-size:22px;">
+          σ<sub>P</sub><sup>2</sup> =
+          w<sub>A</sub><sup>2</sup> · σ<sub>A</sub><sup>2</sup>
+          + w<sub>B</sub><sup>2</sup> · σ<sub>B</sub><sup>2</sup>
+          + 2 · w<sub>A</sub> · w<sub>B</sub> · σ<sub>A</sub> · σ<sub>B</sub> · ρ<sub>A,B</sub>
+        </div>
+        <div class="formula-box mt-16" style="font-size:22px;">
+          σ<sub>P</sub> =
+          √[w<sub>A</sub><sup>2</sup>σ<sub>A</sub><sup>2</sup>
+          + w<sub>B</sub><sup>2</sup>σ<sub>B</sub><sup>2</sup>
+          + 2w<sub>A</sub>w<sub>B</sub>σ<sub>A</sub>σ<sub>B</sub>ρ<sub>A,B</sub>]
+        </div>
+      </div>
+
+      <div>
+        <div class="label">Risiko großer Portfolios</div>
+        <div class="formula-box mt-16">
+          σ<sub>P</sub><sup>2</sup> =
+          Σ<sub>i=1</sub><sup>n</sup> w<sub>i</sub><sup>2</sup>σ<sub>i</sub><sup>2</sup>
+          + 2Σ<sub>i&lt;j</sub> w<sub>i</sub>w<sub>j</sub>σ<sub>i</sub>σ<sub>j</sub>ρ<sub>i,j</sub>
+        </div>
+        <p class="body mt-16">n = Anzahl der Wertpapiere.</p>
+
+        <div class="label mt-32">Benötigte Inputdaten für n Wertpapiere</div>
+        <table class="grid-tbl mt-16" style="font-size:20px;">
+          <tbody>
+            <tr><td class="k">Rendite-Erwartungen</td><td>n</td></tr>
+            <tr><td class="k">Volatilitäten</td><td>n</td></tr>
+            <tr><td class="k">Korrelationen</td><td>n(n−1)/2</td></tr>
+            <tr><td class="k">Summe</td><td><strong>n(n+3)/2</strong></td></tr>
+          </tbody>
+        </table>
+
+        <div class="callout mt-24">
+          <span class="tag">Prüfungsidee</span>
+          Die Zahl der Korrelationen wächst stark mit n. Genau deshalb ist die praktische Umsetzung datenintensiv.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Portfolioformeln · Rendite, Varianz, Korrelation</span><span>05 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-06"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="06 Beispiel Aktie Bond"
+  data-slide-label="06 Beispiel Aktie Bond"
+  data-slide-index="6"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Beispiel · Aktie und Bond</span><span>06</span></div>
+
+  <div class="content-head" style="top:120px;">
+    <div class="eyebrow">2-Wertpapier-Portfolio</div>
+    <h2 class="title-md" style="margin-top:14px;">Mehr Aktie erhöht die erwartete Rendite — das Risiko fällt zuerst und steigt danach.</h2>
+  </div>
+
+  <div class="content-body" style="top:270px;">
+    <div class="two-col" style="grid-template-columns: 7fr 5fr; gap:48px;">
+      <div>
+        <table class="grid-tbl" style="font-size:18px;">
+          <thead>
+            <tr>
+              <th>E(r<sub>P</sub>)</th>
+              <th>σ<sub>P</sub><sup>2</sup></th>
+              <th>σ<sub>P</sub></th>
+              <th>w<sub>A</sub></th>
+              <th>w<sub>B</sub></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>6,0%</td><td>0,0121</td><td>11,0%</td><td>0,0%</td><td>100,0%</td></tr>
+            <tr><td>7,0%</td><td>0,0114</td><td>10,7%</td><td>10,0%</td><td>90,0%</td></tr>
+            <tr><td>8,0%</td><td>0,0110</td><td>10,5%</td><td>20,0%</td><td>80,0%</td></tr>
+            <tr><td>9,0%</td><td>0,0109</td><td>10,5%</td><td>30,0%</td><td>70,0%</td></tr>
+            <tr><td>10,0%</td><td>0,0112</td><td>10,6%</td><td>40,0%</td><td>60,0%</td></tr>
+            <tr><td>11,0%</td><td>0,0118</td><td>10,9%</td><td>50,0%</td><td>50,0%</td></tr>
+            <tr><td>12,0%</td><td>0,0127</td><td>11,3%</td><td>60,0%</td><td>40,0%</td></tr>
+            <tr><td>13,0%</td><td>0,0139</td><td>11,8%</td><td>70,0%</td><td>30,0%</td></tr>
+            <tr><td>14,0%</td><td>0,0155</td><td>12,4%</td><td>80,0%</td><td>20,0%</td></tr>
+            <tr><td>15,0%</td><td>0,0174</td><td>13,2%</td><td>90,0%</td><td>10,0%</td></tr>
+            <tr><td>16,0%</td><td>0,0196</td><td>14,0%</td><td>100,0%</td><td>0,0%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <div class="label">Interpretation der Tabelle</div>
+        <div class="callout mt-16">
+          <span class="tag">Obere Zone</span>
+          Von 6,0% bis ca. 9,0% steigt E(r<sub>P</sub>), während σ<sub>P</sub><sup>2</sup> sinkt.
+        </div>
+        <div class="callout mt-24">
+          <span class="tag">Untere Zone</span>
+          Ab höheren Aktienquoten steigt E(r<sub>P</sub>) weiter, aber σ<sub>P</sub><sup>2</sup> steigt ebenfalls.
+        </div>
+        <div class="formula-box mt-24">
+          Minimum in der Tabelle: ca. σ<sub>P</sub> = 10,5% bei E(r<sub>P</sub>) ≈ 8–9%.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Beispiel · Portfolio aus Aktie und Corporate Bond</span><span>06 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-07"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="07 Diversifikation MVP"
+  data-slide-label="07 Diversifikation MVP"
+  data-slide-index="7"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Diversifikation · Minimum-Varianz-Portfolio</span><span>07</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Der Diversifikationseffekt</div>
+    <h2 class="title-md" style="margin-top:18px;">Nicht perfekt korrelierte Wertpapiere erzeugen ein besseres μ-σ-Profil.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:60px;">
+      <div>
+        <ul class="clean">
+          <li><span class="marker">01</span><span>Da A und B nicht perfekt miteinander korreliert sind, führt ein Portfolio aus beiden Wertpapieren zu einem besseren μ-σ-Profil als ein Portfolio aus nur einem Wertpapier.</span></li>
+          <li><span class="marker">02</span><span>Diesen Effekt nennt man <strong>Diversifikation</strong>.</span></li>
+          <li><span class="marker">03</span><span>Das <strong>Minimum-Varianz-Portfolio</strong> ist das Portfolio mit der geringsten Varianz innerhalb der betrachteten Kombinationen.</span></li>
+          <li><span class="marker">04</span><span>Der positiv geneigte Bereich oberhalb des Minimum-Varianz-Portfolios bildet den effizienten Rand.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="card" style="padding:34px;">
+          <div class="card-eyebrow">Grafik-Nachbildung</div>
+          <div style="height:330px; position:relative; border-left:2px solid var(--line); border-bottom:2px solid var(--line); margin-top:18px;">
+            <div style="position:absolute; left:80px; bottom:80px; width:420px; height:220px; border:3px solid var(--accent); border-radius:50%; transform:rotate(-25deg); opacity:0.45;"></div>
+            <div style="position:absolute; left:140px; bottom:95px; width:16px; height:16px; background:var(--accent); border-radius:50%;"></div>
+            <div style="position:absolute; left:220px; bottom:140px; width:16px; height:16px; background:var(--accent); border-radius:50%;"></div>
+            <div style="position:absolute; left:310px; bottom:190px; width:16px; height:16px; background:var(--accent); border-radius:50%;"></div>
+            <div style="position:absolute; left:390px; bottom:250px; width:16px; height:16px; background:var(--accent); border-radius:50%;"></div>
+            <span class="pill solid" style="position:absolute; left:20px; top:18px;">Effizienzgrenze</span>
+            <span class="pill" style="position:absolute; left:210px; bottom:78px;">Minimum-Varianz-Portfolio</span>
+            <span class="pill" style="position:absolute; left:330px; top:60px;">Maximum-Rendite-Portfolio</span>
+            <span class="pill" style="position:absolute; left:50px; bottom:35px;">w<sub>B</sub>=100%</span>
+          </div>
+          <p class="body mt-16" style="font-size:18px;">Achsenlogik der Skriptgrafik: erwartete Rendite vertikal, Varianz horizontal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Diversifikation · Minimum-Varianz-Portfolio</span><span>07 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-08"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="08 Effizienzkurve"
+  data-slide-label="08 Effizienzkurve"
+  data-slide-index="8"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Effizienzkurve</span><span>08</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Efficient Curve</div>
+    <h2 class="title-md" style="margin-top:18px;">Ein Portfolio ist effizient, wenn kein besseres Portfolio im Rendite-Risiko-Sinn existiert.</h2>
+  </div>
+
+  <div class="content-body" style="top:340px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="label">Definition effizienter Portfolios</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">✓</span><span>Effiziente Portfolios liegen auf der „Efficient Curve“.</span></li>
+          <li><span class="marker">✓</span><span>Ein Portfolio ist genau dann effizient, wenn es kein zweites Portfolio gibt, das bei gegebenem Risiko eine höhere Renditeerwartung impliziert.</span></li>
+          <li><span class="marker">✓</span><span>Oder: bei gegebener Renditeerwartung mit geringerem Risiko einhergeht.</span></li>
+          <li><span class="marker">✓</span><span>Oder: sowohl höhere Rendite als auch niedrigeres Risiko aufweist.</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="label">Konsequenz für Asset Allocation</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">→</span><span>Effizienzkurve = positiv geneigter, konkaver Bereich oberhalb des Minimum-Varianz-Portfolios.</span></li>
+          <li><span class="marker">→</span><span>Portefeuilles auf der Effizienzkurve bieten die höchstmögliche Rendite bei gegebenem Risikolevel.</span></li>
+          <li><span class="marker">→</span><span>Rationale Investoren mit Rendite-Risiko-Fokus akzeptieren nur Portefeuilles auf der Effizienzgrenze.</span></li>
+          <li><span class="marker">→</span><span>Investoren mit bekannter Risikotoleranz können daraus ihr optimales Portfolio ableiten.</span></li>
+        </ul>
+        <div class="callout mt-24">
+          <span class="tag">Ergebnis</span>
+          Erhebliche Vereinfachung des Asset-Allocation-Prozesses.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Effizienzkurve · Effiziente Portfolios</span><span>08 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-09"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="09 Coca Cola Intel"
+  data-slide-label="09 Coca Cola Intel"
+  data-slide-index="9"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Effizienzkurve · Beispiel</span><span>09</span></div>
+
+  <div class="content-head" style="top:120px;">
+    <div class="eyebrow">2 Aktien: Coca-Cola &amp; Intel</div>
+    <h2 class="title-md" style="margin-top:14px;">Auch bei ρ = 0 entsteht durch Mischung eine gekrümmte Portfoliolinie.</h2>
+  </div>
+
+  <div class="content-body" style="top:280px;">
+    <div class="two-col" style="grid-template-columns: 5fr 7fr; gap:48px;">
+      <div>
+        <div class="label">Ausgangsdaten</div>
+        <table class="grid-tbl mt-16" style="font-size:20px;">
+          <thead>
+            <tr><th>Aktie</th><th>Erwartete Rendite</th><th>Volatilität</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="k">Intel</td><td>26%</td><td>50%</td></tr>
+            <tr><td class="k">Coca-Cola</td><td>6%</td><td>25%</td></tr>
+          </tbody>
+        </table>
+        <div class="formula-box mt-20">ρ<sub>Coca-Cola, Intel</sub> = 0</div>
+      </div>
+
+      <div>
+        <div class="label">Ausgewählte 2-Aktien-Portfolios</div>
+        <table class="grid-tbl mt-16" style="font-size:18px;">
+          <thead>
+            <tr><th>w<sub>Intel</sub></th><th>w<sub>Coca-Cola</sub></th><th>E(r<sub>P</sub>)</th><th>σ(r<sub>P</sub>)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1,00</td><td>0,00</td><td>26,0%</td><td>50,0%</td></tr>
+            <tr><td>0,80</td><td>0,20</td><td>22,0%</td><td>40,3%</td></tr>
+            <tr><td>0,60</td><td>0,40</td><td>18,0%</td><td>31,6%</td></tr>
+            <tr><td>0,40</td><td>0,60</td><td>14,0%</td><td>25,1%</td></tr>
+            <tr><td>0,20</td><td>0,80</td><td>10,0%</td><td>22,4%</td></tr>
+            <tr><td>0,00</td><td>1,00</td><td>6,0%</td><td>25,0%</td></tr>
+          </tbody>
+        </table>
+        <div class="callout mt-20">
+          <span class="tag">Lernzweck</span>
+          Der untere Bereich der Kurve ist ineffizient; effiziente Portfolios liegen im oberen, positiv geneigten Bereich.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Coca-Cola &amp; Intel · ρ = 0</span><span>09 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-10"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="10 Korrelation"
+  data-slide-label="10 Korrelation"
+  data-slide-index="10"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Einfluss des Korrelationskoeffizienten</span><span>10</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Korrelation und Diversifikationsvorteil</div>
+    <h2 class="title-md" style="margin-top:18px;">Je niedriger die Korrelation, desto größer der Vorteil der Diversifikation.</h2>
+  </div>
+
+  <div class="content-body" style="top:340px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <ul class="clean">
+          <li><span class="marker">ρ</span><span>Identische Endpunkte der Effizienzgrenze für alle Korrelationskoeffizienten.</span></li>
+          <li><span class="marker">+1</span><span>Diversifikation sinnlos: Wertpapiere bewegen sich stets und vollständig gleichläufig.</span></li>
+          <li><span class="marker">&lt;1</span><span>Ein bestimmtes Renditeniveau kann mit geringerer Varianz erreicht werden als bei ρ = 1.</span></li>
+          <li><span class="marker">0</span><span>Risiken sind unabhängig voneinander; keine Tendenz zu gemeinsamer Entwicklung.</span></li>
+          <li><span class="marker">−1</span><span>Minimum-Varianz-Grenze besteht aus zwei Geraden mit Schnittpunkt bei σ = 0.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="label">Korrelationsmatrix ausgewählter Assetklassen</div>
+        <p class="body mt-16">
+          Die Skriptgrafik zeigt eine farbcodierte Korrelationsmatrix ausgewählter Assetklassen auf Basis von Fünf-Jahres-Korrelationen wöchentlicher Renditen.
+        </p>
+        <div class="mt-20" style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+          <span class="pill ok">Grün: positive Korrelation</span>
+          <span class="pill bad">Orange/Rot: niedrige oder negative Korrelation</span>
+          <span class="pill solid">Aktien</span>
+          <span class="pill solid">Anleihen</span>
+          <span class="pill solid">Rohstoffe</span>
+          <span class="pill solid">Zinsen</span>
+        </div>
+        <div class="callout mt-24">
+          <span class="tag">Grafik-Hinweis</span>
+          Einzelne Zellwerte der sehr kleinteiligen Matrix sind im Skript unklar; übernommen werden Skala, Aussage und Assetklassen-Systematik.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Korrelation · ρ ∈ [−1, +1]</span><span>10 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-11"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="11 Leerverkaeufe"
+  data-slide-label="11 Leerverkaeufe"
+  data-slide-index="11"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Verlängerung der Effizienzkurve durch Leerverkäufe</span><span>11</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Long und Short</div>
+    <h2 class="title-md" style="margin-top:18px;">Short-Positionen erlauben Portfolioanteile außerhalb des Bereichs 0 bis 100%.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="label">Begriffe</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">Long</span><span><strong>Long Position:</strong> normale Situation; positive Investition in ein Wertpapier.</span></li>
+          <li><span class="marker">Short</span><span><strong>Short Position:</strong> negative Investition in ein Wertpapier.</span></li>
+          <li><span class="marker">→</span><span>Beim Leerverkauf verkauft ein Anleger heute eine nicht in seinem Besitz befindliche Aktie mit der Verpflichtung, diese Aktie künftig zurückzukaufen.</span></li>
+          <li><span class="marker">↓</span><span>Der Leerverkauf ist profitabel, wenn erwartet wird, dass der Preis der Aktie in Zukunft sinkt.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="label">Verlängerung der Effizienzkurve</div>
+        <table class="grid-tbl mt-16" style="font-size:19px;">
+          <thead>
+            <tr><th>Portfolioanteile</th><th>Interpretation</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="k">(1,2 ; −0,2)</td><td>Intel long, Coca-Cola short.</td></tr>
+            <tr><td class="k">(1,5 ; −0,5)</td><td>Stärkere Long-Short-Ausweitung oberhalb des Intel-Punktes.</td></tr>
+            <tr><td class="k">(−0,2 ; 1,2)</td><td>Intel short, Coca-Cola long.</td></tr>
+            <tr><td class="k">(−0,5 ; 1,5)</td><td>Stärkere Long-Short-Ausweitung unterhalb des Coca-Cola-Punktes.</td></tr>
+          </tbody>
+        </table>
+        <div class="callout mt-24">
+          <span class="tag">Grafik-Aussage</span>
+          Leerverkäufe verlängern die mögliche Portfoliokurve über die reinen Long-only-Kombinationen hinaus.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Long · Short · Leerverkauf</span><span>11 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-12"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="12 Viele Wertpapiere"
+  data-slide-label="12 Viele Wertpapiere"
+  data-slide-index="12"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Effizienzkurve für zahlreiche Wertpapiere</span><span>12</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Viele Aktien / Wertpapiere</div>
+    <h2 class="title-md" style="margin-top:18px;">Ein einzeln ineffizientes Wertpapier kann im Portfolio trotzdem nützlich sein.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="label">Bore Industries im Beispiel</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">01</span><span>In das Portfolio wird die Aktie von Bore Industries aufgenommen.</span></li>
+          <li><span class="marker">02</span><span>Bore ist nicht mit Intel und Coca-Cola korreliert.</span></li>
+          <li><span class="marker">03</span><span>Bore weist eine sehr niedrige Rendite von 2% und dieselbe Volatilität wie Coca-Cola von 25% auf.</span></li>
+          <li><span class="marker">04</span><span>Obwohl Bore gegenüber Coca-Cola ineffizient ist, kann Bore durch Diversifikationsvorteile im Portfolio nützlich sein.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="label">Grafische Aussagen der Skriptfolien</div>
+        <div class="mt-16" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+          <div class="card" style="padding:24px;">
+            <div class="card-eyebrow">Intel + Coca-Cola + Bore</div>
+            <div class="card-body">Durch Kombination von drei Aktien entstehen zusätzliche Portfolio-Möglichkeiten gegenüber reinen Zwei-Aktien-Portfolios.</div>
+          </div>
+          <div class="card" style="padding:24px;">
+            <div class="card-eyebrow">Ineffiziente Portfolios</div>
+            <div class="card-body">Portfolios mit allen drei Aktien werden als grauer Bereich dargestellt; effiziente Portfolios liegen auf der roten Effizienzlinie.</div>
+          </div>
+          <div class="card" style="padding:24px;">
+            <div class="card-eyebrow">Drei vs. zehn Aktien</div>
+            <div class="card-body">Die Effizienzlinie erweitert sich, wenn weitere Aktien aufgenommen werden.</div>
+          </div>
+          <div class="card" style="padding:24px;">
+            <div class="card-eyebrow">Beispiel-Aktien</div>
+            <div class="card-body">Amazon, GE, McDonald’s, Tiffany, Apple, Nike, IBM, Molson-Coors, Walmart, Newmont Mining.</div>
+          </div>
+        </div>
+        <div class="callout mt-24">
+          <span class="tag">Kernaussage</span>
+          Mehr Anlagealternativen können die Effizienzlinie verbessern, weil zusätzliche Kombinationsmöglichkeiten entstehen.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Viele Wertpapiere · Erweiterung der Effizienzlinie</span><span>12 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-13"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="13 Risikoarten Versicherung"
+  data-slide-label="13 Risikoarten Versicherung"
+  data-slide-index="13"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Gemeinsames und unabhängiges Risiko</span><span>13</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Warum Portfolio-Risiko anders ist als Einzelrisiko</div>
+    <h2 class="title-md" style="margin-top:18px;">Unabhängige Risiken mitteln sich in großen Portfolios heraus.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="label">Begriffe</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">G</span><span><strong>Gemeinsames Risiko:</strong> Risiko, das perfekt korreliert ist; Risiko, das alle Wertpapiere betrifft.</span></li>
+          <li><span class="marker">U</span><span><strong>Unabhängiges Risiko:</strong> Risiko, das unkorreliert ist; Risiko, das eine bestimmte Sicherheit betrifft.</span></li>
+          <li><span class="marker">D</span><span><strong>Diversifikation:</strong> Mittelwertbildung aus unabhängigen Risiken in einem großen Portfolio.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="label">Einbruch vs. Erdbebenversicherung</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">1%</span><span>Jährliche Wahrscheinlichkeit eines Einbruchs in ein Haus: 1%.</span></li>
+          <li><span class="marker">1%</span><span>Jährliche Wahrscheinlichkeit einer Beschädigung durch Erdbeben: ca. 1%.</span></li>
+          <li><span class="marker">100k</span><span>Versicherungsgesellschaft mit jeweils 100.000 Policen in San Francisco.</span></li>
+          <li><span class="marker">Einbruch</span><span>Erwartet ca. 1.000 Ansprüche pro Jahr; tatsächliche Anzahl kann etwas, aber nicht viel höher oder niedriger sein.</span></li>
+          <li><span class="marker">Erdbeben</span><span>In den meisten Jahren kein Erdbeben; im Erdbebenfall können bis zu 100.000 Ansprüche entstehen.</span></li>
+        </ul>
+        <div class="callout mt-20">
+          <span class="tag">Folge</span>
+          Bei gleicher erwarteter Anspruchszahl entstehen Portfolios mit sehr unterschiedlichen Risikoeigenschaften.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Gemeinsames Risiko · Unabhängiges Risiko · Versicherung</span><span>13 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-14"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="14 Rolle Diversifikation"
+  data-slide-label="14 Rolle Diversifikation"
+  data-slide-index="14"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Die Rolle der Diversifikation</span><span>14</span></div>
+
+  <div class="content-head" style="top:120px;">
+    <div class="eyebrow">Versicherung und Glücksspiel</div>
+    <h2 class="title-md" style="margin-top:14px;">Viele unabhängige Einsätze reduzieren die Standardabweichung des Durchschnitts.</h2>
+  </div>
+
+  <div class="content-body" style="top:280px;">
+    <div class="two-col" style="gap:44px;">
+      <div>
+        <div class="label">Aus Sicht des Hausbesitzers / Versicherers</div>
+        <div class="formula-box mt-16" style="font-size:20px;">
+          σ(Anspruch) = √Var(Anspruch)<br/>
+          = √[0,99·(0−0,01)<sup>2</sup> + 0,01·(1−0,01)<sup>2</sup>] = 9,95%
+        </div>
+        <p class="body mt-16">Für den Hausbesitzer ist die Standardabweichung für einen Verlust durch Erdbeben und Diebstahl gleich hoch.</p>
+        <div class="formula-box mt-16" style="font-size:20px;">
+          σ(Prozentsatz Ansprüche aus Einbrüchen)<br/>
+          = σ(einzelner Anspruch) / √Anzahl der Beobachtungen<br/>
+          = 9,95% / √100.000 = 0,03%
+        </div>
+        <div class="callout mt-16">
+          <span class="tag">Ergebnis</span>
+          Für den Einbruchsversicherer besteht kaum noch Risiko.
+        </div>
+      </div>
+
+      <div>
+        <div class="label">Roulette-Beispiel</div>
+        <p class="body mt-16">37 Zahlen; Gewinnwahrscheinlichkeit 1/37. Das Kasino verliert bei Gewinn 35 € und erzielt 1 €, wenn der Spieler verliert.</p>
+        <div class="formula-box mt-16" style="font-size:20px;">
+          E[Auszahlung] = 1/37 · (−35 €) + 36/37 · (1 €) = 0,027 €
+        </div>
+        <div class="formula-box mt-16" style="font-size:20px;">
+          σ(Auszahlung) = √[1/37·(−35−0,027)<sup>2</sup> + 36/37·(1−0,027)<sup>2</sup>] = 5,84 €
+        </div>
+        <div class="formula-box mt-16" style="font-size:20px;">
+          σ(durchschn. Auszahlung) = 5,84 € / √9.000.000 = 0,0019 €
+        </div>
+        <div class="callout mt-16">
+          <span class="tag">Lernzweck</span>
+          Einzeleinsatz riskant; Millionen ähnlicher unabhängiger Einsätze machen den Durchschnitt stabil.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Diversifikation · Standardabweichung des Durchschnitts</span><span>14 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-15"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="15 Aktienrisiken"
+  data-slide-label="15 Aktienrisiken"
+  data-slide-index="15"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Diversifikation von Aktienportfolios</span><span>15</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Unternehmensspezifisches und systematisches Risiko</div>
+    <h2 class="title-md" style="margin-top:18px;">Nicht jedes Risiko wird durch Diversifikation beseitigt.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="label">Nachrichtenarten</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">U</span><span><strong>Unternehmensspezifische Nachrichten:</strong> gute oder schlechte Nachrichten über das Unternehmen selbst.</span></li>
+          <li><span class="marker">M</span><span><strong>Marktweite Meldungen:</strong> Nachrichten, die alle Aktien beeinflussen.</span></li>
+          <li><span class="marker">→</span><span>Beispiele: Konjunkturschwankungen, Zinsniveauveränderungen, andere makroökonomische Größen.</span></li>
+        </ul>
+
+        <div class="label mt-32">Systematisches Risiko</div>
+        <p class="body mt-16">
+          Schwankungen aufgrund marktweiter Meldungen betreffen alle Aktien gleichzeitig. Diese Risikoart heißt systematisches, nicht diversifizierbares oder Marktrisiko.
+        </p>
+      </div>
+
+      <div>
+        <div class="label">Unternehmensspezifisches Risiko</div>
+        <p class="body mt-16">
+          Schwankungen aufgrund unternehmensspezifischer Risiken sind unabhängige Risiken. Diese Risikoart heißt auch idiosynkratisches oder diversifizierbares Risiko.
+        </p>
+        <div class="callout mt-20">
+          <span class="tag">Wegdiversifikation</span>
+          Wenn viele Aktien in einem großen Portfolio kombiniert werden, gleichen sich firmenspezifische Risiken „im Mittel“ aus.
+        </div>
+        <div class="label mt-32">Grafik-Aussage 1970–2015</div>
+        <p class="body mt-16">
+          Die gewichtete durchschnittliche Standardabweichung einzelner Aktien liegt über der Standardabweichung des S&amp;P 500 Index. Marktereignisse wie Börsenkrach 1987, Finanzkrise 2008 und Euro-Krise 2010–2011 führen zu sichtbaren Volatilitätsspitzen.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Systematisches · unsystematisches Risiko</span><span>15 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-16"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="16 Typ S Typ I"
+  data-slide-label="16 Typ S Typ I"
+  data-slide-index="16"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Systematisch vs. idiosynkratisch</span><span>16</span></div>
+
+  <div class="content-head" style="top:120px;">
+    <div class="eyebrow">Typ-S- und Typ-I-Unternehmen</div>
+    <h2 class="title-md" style="margin-top:14px;">Systematisches Risiko bleibt bestehen; idiosynkratisches Risiko verschwindet mit Diversifikation.</h2>
+  </div>
+
+  <div class="content-body" style="top:280px;">
+    <div class="three-col" style="gap:24px;">
+      <div class="card" style="padding:28px;">
+        <div class="card-eyebrow">Typ S</div>
+        <div class="card-title" style="font-size:34px;">Systematisch</div>
+        <div class="card-body">
+          Unternehmen vom Typ S werden nur durch die wirtschaftliche Lage beeinflusst. Bei guter Lage: Rendite 40%. Bei schlechter Lage: Rendite −20%.
+        </div>
+        <div class="callout mt-20">
+          <span class="tag">Folge</span>
+          Ein großes Portfolio aus Typ-S-Aktien diversifiziert dieses Risiko nicht.
+        </div>
+      </div>
+
+      <div class="card" style="padding:28px;">
+        <div class="card-eyebrow">Typ I</div>
+        <div class="card-title" style="font-size:34px;">Idiosynkratisch</div>
+        <div class="card-body">
+          Unternehmen vom Typ I werden nur von unternehmensspezifischen Risiken beeinflusst. Renditen betragen mit gleicher Wahrscheinlichkeit 35% oder −25%.
+        </div>
+        <div class="callout mt-20">
+          <span class="tag">Folge</span>
+          Das Risiko vieler Typ-I-Unternehmen wird diversifiziert.
+        </div>
+      </div>
+
+      <div class="card" style="padding:28px;">
+        <div class="card-eyebrow">Diversifikationseffekt</div>
+        <div class="card-title" style="font-size:34px;">Abnehmender Zusatznutzen</div>
+        <div class="card-body">
+          Das Gesamtrisiko fällt mit steigender Aktienzahl zunächst stark, nähert sich aber dem systematischen Risiko an.
+        </div>
+        <div class="callout mt-20">
+          <span class="tag">Merke</span>
+          Das Ausmaß der Diversifikationsgewinne nimmt mit zunehmender Anzahl der Assets ab.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Typ S · Typ I · abnehmende Diversifikationsgewinne</span><span>16 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-17"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="17 MVP Berechnung"
+  data-slide-label="17 MVP Berechnung"
+  data-slide-index="17"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Bestimmung der Effizienzkurve · 2-Asset-Portfolio</span><span>17</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Minimum-Varianz-Portfolio</div>
+    <h2 class="title-md" style="margin-top:18px;">Die Gewichtung von A im MVP ergibt sich aus Varianzen, Standardabweichungen und Korrelation.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="label">Herleitung</div>
+        <div class="formula-box mt-16" style="font-size:21px;">
+          σ<sub>P</sub><sup>2</sup> =
+          w<sub>A</sub><sup>2</sup>σ<sub>A</sub><sup>2</sup>
+          + w<sub>B</sub><sup>2</sup>σ<sub>B</sub><sup>2</sup>
+          + 2w<sub>A</sub>w<sub>B</sub>σ<sub>A</sub>σ<sub>B</sub>ρ<sub>A,B</sub>
+        </div>
+        <p class="body mt-16">w<sub>B</sub> wird ersetzt durch 1 − w<sub>A</sub>.</p>
+        <div class="formula-box mt-16" style="font-size:21px;">
+          σ<sub>P</sub><sup>2</sup> =
+          w<sub>A</sub><sup>2</sup>σ<sub>A</sub><sup>2</sup>
+          + (1−w<sub>A</sub>)<sup>2</sup>σ<sub>B</sub><sup>2</sup>
+          + 2w<sub>A</sub>(1−w<sub>A</sub>)σ<sub>A</sub>σ<sub>B</sub>ρ<sub>A,B</sub>
+        </div>
+        <p class="body mt-16">Die Varianzfunktion wird nach w<sub>A</sub> abgeleitet und gleich null gesetzt.</p>
+        <div class="formula-box mt-16">
+          w<sub>A</sub> =
+          (σ<sub>B</sub><sup>2</sup> − σ<sub>A</sub>σ<sub>B</sub>ρ<sub>A,B</sub>)
+          /
+          (σ<sub>A</sub><sup>2</sup> + σ<sub>B</sub><sup>2</sup> − 2σ<sub>A</sub>σ<sub>B</sub>ρ<sub>A,B</sub>)
+        </div>
+      </div>
+
+      <div>
+        <div class="label">Beispiel Aktie/Bond</div>
+        <table class="grid-tbl mt-16" style="font-size:20px;">
+          <thead><tr><th></th><th>Aktie</th><th>Bond</th></tr></thead>
+          <tbody>
+            <tr><td class="k">Erwartete Rendite</td><td>16,0%</td><td>6,0%</td></tr>
+            <tr><td class="k">Standardabweichung</td><td>14,0%</td><td>11,0%</td></tr>
+            <tr><td class="k">Korrelation</td><td colspan="2">0,5</td></tr>
+          </tbody>
+        </table>
+        <div class="formula-box mt-20" style="font-size:21px;">
+          w<sub>A</sub> =
+          (0,11<sup>2</sup> − 0,14·0,11·0,5)
+          /
+          (0,14<sup>2</sup> + 0,11<sup>2</sup> − 2·0,14·0,11·0,5)
+          = <strong>0,27</strong>
+        </div>
+        <ul class="clean mt-20">
+          <li><span class="marker">MVP</span><span>Rendite im MVP = <strong>8,7%</strong>.</span></li>
+          <li><span class="marker">σ</span><span>Volatilität im MVP = <strong>10,45%</strong>.</span></li>
+          <li><span class="marker">Rand</span><span>Realisierbare Renditen im effizienten Rand: <strong>8,7% bis 16%</strong>.</span></li>
+          <li><span class="marker">Rand</span><span>Realisierbare Volatilitäten im effizienten Rand: <strong>10,45% bis 14%</strong>.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>MVP · Gewichtung wA</span><span>17 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-18"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="18 Kritische Wuerdigung"
+  data-slide-label="18 Kritische Wuerdigung"
+  data-slide-index="18"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Kritische Würdigung</span><span>18</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Grenzen der Portfoliotheorie</div>
+    <h2 class="title-md" style="margin-top:18px;">Die Theorie ist elegant, aber praktisch nicht ohne Einschränkungen.</h2>
+  </div>
+
+  <div class="content-body" style="top:340px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:24px;">
+      <div class="card" style="padding:28px;">
+        <div class="card-eyebrow">01</div>
+        <div class="card-title" style="font-size:30px;">Transaktionskosten</div>
+        <div class="card-body">Portfoliotheorie ist nicht für beliebige Depotgrößen umsetzbar; Depotgrößenproblematik.</div>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div class="card-eyebrow">02</div>
+        <div class="card-title" style="font-size:30px;">Betrachtungszeitraum</div>
+        <div class="card-body">Nur eine Periode; Timing-Problematik und Portfoliorevisions-Problematik werden vernachlässigt.</div>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div class="card-eyebrow">03</div>
+        <div class="card-title" style="font-size:30px;">Volatilität</div>
+        <div class="card-body">Die Nutzung von Volatilität impliziert eine Normalverteilung der Renditen.</div>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div class="card-eyebrow">04</div>
+        <div class="card-title" style="font-size:30px;">Inputdaten</div>
+        <div class="card-body">Hohe Anzahl an Inputdaten: n Renditen, n Volatilitäten, n(n−1)/2 Korrelationen.</div>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div class="card-eyebrow">05</div>
+        <div class="card-title" style="font-size:30px;">Instabilität</div>
+        <div class="card-body">Input-Daten sind zeitlich instabil.</div>
+      </div>
+      <div class="card" style="padding:28px;">
+        <div class="card-eyebrow">06</div>
+        <div class="card-title" style="font-size:30px;">Anlegerverhalten</div>
+        <div class="card-body">Irrationalität der Anleger.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Kritische Würdigung der Portfoliotheorie</span><span>18 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-19"
+  class="slide-divider module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="19 Divider Tobin"
+  data-slide-label="19 Divider Tobin"
+  data-slide-index="19"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Teil 06</span><span>19 <span class="dot">●</span></span></div>
+  <div class="big-num">02</div>
+  <div class="sub-label" style="top:180px;">Tobin-Separation</div>
+  <div class="big-title">
+    Risikolose Anlage<br/>
+    <em style="color:var(--accent-2);">plus Marktportfolio.</em>
+  </div>
+  <div class="chrome-bot"><span>James Tobin · Kapitalmarktlinie · Marktportfolio</span><span>19 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-20"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="20 Tobin Herleitung"
+  data-slide-label="20 Tobin Herleitung"
+  data-slide-index="20"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Die Tobin-Separation</span><span>20</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Erweiterung des Markowitz-Ansatzes</div>
+    <h2 class="title-md" style="margin-top:18px;">James Tobin ergänzt die sichere Geldanlage.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="label">Ausgangspunkt und Annahmen</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">1958</span><span>James Tobin erweitert den 1952 eingeführten Denkansatz von Harry M. Markowitz.</span></li>
+          <li><span class="marker">1</span><span>Vollkommener Kapitalmarkt.</span></li>
+          <li><span class="marker">F</span><span>Existenz eines risikolosen Assets F, zu dem Anleger Kapital aufnehmen und anlegen können.</span></li>
+          <li><span class="marker">r<sub>f</sub></span><span>Zinssatz des risikolosen Assets; Volatilität σ<sub>f</sub> = 0.</span></li>
+          <li><span class="marker">P</span><span>Existenz eines risikobehafteten Assets P mit erwarteter Rendite μ<sub>p</sub> und Volatilität σ<sub>p</sub>.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="label">Rendite und Risiko der Kombination</div>
+        <p class="body mt-16">Aufteilung des Anlagebetrages in P mit Anteil x und F mit Anteil 1−x:</p>
+        <div class="formula-box mt-16">
+          μ(x) = x · μ<sub>p</sub> + (1−x) · r<sub>f</sub>
+        </div>
+        <div class="formula-box mt-16">
+          σ(x) =
+          √[x<sup>2</sup>σ<sub>p</sub><sup>2</sup> + (1−x)<sup>2</sup>σ<sub>f</sub><sup>2</sup>
+          + 2x(1−x)σ<sub>p</sub>σ<sub>f</sub>ρ<sub>f,p</sub>]
+          = x · σ<sub>p</sub>
+        </div>
+
+        <div class="label mt-28">Herleitung der Kapitalmarktlinie</div>
+        <div class="formula-box mt-16">
+          μ(x) = r<sub>f</sub> + (μ<sub>p</sub> − r<sub>f</sub>) · x
+        </div>
+        <div class="formula-box mt-16">
+          σ(x) = x · σ<sub>p</sub> ⇒ x = σ(x) / σ<sub>p</sub>
+        </div>
+        <div class="formula-box mt-16">
+          μ(x) = r<sub>f</sub> + [(μ<sub>p</sub> − r<sub>f</sub>) / σ<sub>p</sub>] · σ(x)
+          &nbsp; bzw. &nbsp; μ(x) = r<sub>f</sub> + b · σ(x)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Tobin · Herleitung der CML</span><span>20 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-21"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="21 Kapitalmarktlinie"
+  data-slide-label="21 Kapitalmarktlinie"
+  data-slide-index="21"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Kapitalmarktlinie</span><span>21</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Capital Market Line</div>
+    <h2 class="title-md" style="margin-top:18px;">Die Steigung misst Überrendite pro Einheit Risiko.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="formula-box">
+          μ(x) = r<sub>f</sub> + [(μ<sub>p</sub> − r<sub>f</sub>) / σ<sub>p</sub>] · σ(x)
+        </div>
+        <div class="callout mt-24">
+          <span class="tag">Steigung</span>
+          (μ<sub>p</sub> − r<sub>f</sub>) / σ<sub>p</sub> setzt die Überrendite ins Verhältnis zum eingegangenen Risiko.
+          Je höher, desto besser.
+        </div>
+        <ul class="clean mt-24">
+          <li><span class="marker">x=50%</span><span>Teilweise Investition in P und risikolose Anlage.</span></li>
+          <li><span class="marker">x=100%</span><span>Vollständige Investition in P.</span></li>
+          <li><span class="marker">x&gt;100%</span><span>Kauf von P durch Darlehensaufnahme.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="card" style="padding:34px;">
+          <div class="card-eyebrow">Diagramm-Logik</div>
+          <div style="height:330px; position:relative; border-left:2px solid var(--line); border-bottom:2px solid var(--line); margin-top:18px;">
+            <div style="position:absolute; left:10px; bottom:70px; width:520px; height:3px; background:var(--ink); transform:rotate(-24deg); transform-origin:left center;"></div>
+            <div style="position:absolute; left:250px; bottom:160px; width:18px; height:18px; border-radius:50%; background:var(--accent);"></div>
+            <span class="pill solid" style="position:absolute; left:250px; bottom:185px;">P</span>
+            <span class="pill" style="position:absolute; left:0; bottom:50px;">r<sub>f</sub></span>
+            <span class="pill" style="position:absolute; left:330px; bottom:240px;">x = 150%</span>
+            <span class="pill" style="position:absolute; left:410px; bottom:285px;">x = 200%</span>
+            <span class="pill solid" style="position:absolute; right:20px; top:20px;">CML</span>
+          </div>
+          <p class="body mt-16" style="font-size:18px;">Vertikal: erwartete Rendite μ(x). Horizontal: Volatilität σ(x).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>CML · Überrendite pro Risiko</span><span>21 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-22"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="22 Tobin Separation"
+  data-slide-label="22 Tobin Separation"
+  data-slide-index="22"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Tobin-Separation</span><span>22</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Trennung von Anlage- und Finanzierungsentscheidung</div>
+    <h2 class="title-md" style="margin-top:18px;">Das Marktportfolio ist für alle gleich — das optimale Portfolio ist individuell.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="label">Kernaussagen</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">M</span><span>Das Marktportfolio der risikobehafteten Anlage kann unabhängig von der Risikoeinstellung des Investors bestimmt werden.</span></li>
+          <li><span class="marker">Tangente</span><span>Es ist der Tangentialpunkt der Kapitalmarktlinie mit der Effizienzkurve.</span></li>
+          <li><span class="marker">gleich</span><span>Das Marktportfolio ist für alle Investoren gleich, sofern homogene Erwartungen gelten.</span></li>
+          <li><span class="marker">individuell</span><span>Das optimale Portfolio hängt vom individuellen Zinssatz und der individuellen Risikoeinstellung ab.</span></li>
+          <li><span class="marker">CML</span><span>Das optimale Portfolio liegt auf der Kapitalmarktlinie, die alle effizienten Portfolios wiedergibt.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="label">Praktische Anwendung bei Investmentfonds</div>
+        <div class="card mt-16" style="padding:30px;">
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:12px; align-items:end;">
+            <div class="card" style="padding:18px; text-align:center;"><div class="card-title" style="font-size:26px;">Festgeld</div><div class="card-body">risikolose Anlage</div></div>
+            <div class="card" style="padding:18px; text-align:center;"><div class="card-title" style="font-size:26px;">Ertrag</div><div class="card-body">1/3 Aktien</div></div>
+            <div class="card" style="padding:18px; text-align:center;"><div class="card-title" style="font-size:26px;">Wachstum</div><div class="card-body">2/3 Aktien</div></div>
+            <div class="card" style="padding:18px; text-align:center;"><div class="card-title" style="font-size:26px;">Aktien</div><div class="card-body">M</div></div>
+          </div>
+          <div class="formula-box mt-20">
+            Kapitalmarktlinie = Capital Market Line (CML); M = Marktportfolio.
+          </div>
+        </div>
+        <div class="callout mt-20">
+          <span class="tag">Definition</span>
+          Die Trennung der Finanzierungsentscheidung von der Anlageentscheidung wird als Tobin-Separation bezeichnet.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Tobin-Separation · Investmentfonds-Anwendung</span><span>22 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-23"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="23 CML Definition"
+  data-slide-label="23 CML Definition"
+  data-slide-index="23"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Capital Market Line</span><span>23</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Die Capital Market Line</div>
+    <h2 class="title-md" style="margin-top:18px;">Die CML beschreibt alle effizienten μ-σ-Kombinationen bei homogenen Erwartungen.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <ul class="clean">
+          <li><span class="marker">CML</span><span>Bestimmung des Marktpreises des Risikos unter Unsicherheit.</span></li>
+          <li><span class="marker">Ort</span><span>Geometrischer Ort aller effizienten μ-σ-Kombinationen.</span></li>
+          <li><span class="marker">Annahme</span><span>Alle Investoren haben homogene Erwartungen bzgl. Erwartungsrenditen, Varianz und Korrelationskoeffizienten riskanter Assets.</span></li>
+          <li><span class="marker">Folge</span><span>Alle Anleger wollen in dasselbe Tangentialportfolio investieren.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="clean">
+          <li><span class="marker">Gleichgewicht</span><span>Das Tangentialportfolio entspricht einem Portfolio aller riskanten Assets, gewichtet mit ihren Marktwerten.</span></li>
+          <li><span class="marker">M</span><span>Das Marktportfolio ist vollständig diversifiziert.</span></li>
+          <li><span class="marker">Problem</span><span>Das Marktportfolio ist nicht beobachtbar.</span></li>
+        </ul>
+        <div class="callout mt-24">
+          <span class="tag">Verbindung zu CAPM</span>
+          Aus der CML folgt die Frage, welches Risiko in einer Welt mit Marktportfolio für einzelne Assets relevant ist.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>CML · Marktpreis des Risikos</span><span>23 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-24"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="24 Marktportfolio"
+  data-slide-label="24 Marktportfolio"
+  data-slide-index="24"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Das Marktportfolio</span><span>24</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Marktwerte des globalen Marktportfolios 2012</div>
+    <h2 class="title-md" style="margin-top:18px;">Das globale Marktportfolio umfasst sehr unterschiedliche Anlageklassen.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px; grid-template-columns:5fr 7fr;">
+      <div>
+        <div class="kpi" style="text-align:center;">
+          <span class="n">90,6</span>
+          <span class="u">USD Bio. Gesamtmarktwert</span>
+        </div>
+        <p class="body mt-24">Quelle der Skriptgrafik: Doeswijk / Lam (2014), The Global Multi-Asset Market Portfolio, 1959–2012.</p>
+      </div>
+
+      <div>
+        <table class="grid-tbl" style="font-size:20px;">
+          <thead>
+            <tr><th>Assetklasse</th><th style="text-align:right;">Marktwert 2012 in USD Bio.</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="k">Equities</td><td style="text-align:right;">32,9</td></tr>
+            <tr><td class="k">Government Bonds</td><td style="text-align:right;">26,7</td></tr>
+            <tr><td class="k">High Grade Credits</td><td style="text-align:right;">16,8</td></tr>
+            <tr><td class="k">Real Estate</td><td style="text-align:right;">4,6</td></tr>
+            <tr><td class="k">Private Equity</td><td style="text-align:right;">3,3</td></tr>
+            <tr><td class="k">Emerging Markets Debt</td><td style="text-align:right;">2,7</td></tr>
+            <tr><td class="k">High Yield</td><td style="text-align:right;">1,5</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Marktportfolio · globale Marktwerte 2012</span><span>24 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-25"
+  class="slide-divider module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="25 Divider CAPM"
+  data-slide-label="25 Divider CAPM"
+  data-slide-index="25"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Teil 07</span><span>25 <span class="dot">●</span></span></div>
+  <div class="big-num">03</div>
+  <div class="sub-label" style="top:180px;">Capital Asset Pricing Modell</div>
+  <div class="big-title">
+    Entlohnt wird<br/>
+    <em style="color:var(--accent-2);">systematisches Risiko.</em>
+  </div>
+  <div class="chrome-bot"><span>CAPM · Beta · Security Market Line</span><span>25 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-26"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="26 CAPM"
+  data-slide-label="26 CAPM"
+  data-slide-index="26"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Das Capital Asset Pricing Modell</span><span>26</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Welches Risiko ist relevant?</div>
+    <h2 class="title-md" style="margin-top:18px;">In einer Welt mit Marktportfolio zählt die Kovarianz mit dem Marktportfolio.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <ul class="clean">
+          <li><span class="marker">Markowitz</span><span>Das Risiko, ein Wertpapier ins Portefeuille aufzunehmen, wird durch die Kovarianz mit allen anderen Wertpapieren im Portfolio bestimmt.</span></li>
+          <li><span class="marker">CML</span><span>Das einzige relevante Portefeuille ist das Marktportefeuille.</span></li>
+          <li><span class="marker">→</span><span>Die einzige Überlegung ist die Kovarianz des Wertpapiers mit dem Marktportefeuille.</span></li>
+          <li><span class="marker">Maß</span><span>Die Kovarianz ist daher das relevante Risikomaß riskanter Assets.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="clean">
+          <li><span class="marker">D</span><span>Das unsystematische Risiko kann durch Diversifikation vollständig vermieden werden.</span></li>
+          <li><span class="marker">S</span><span>Das systematische Risiko lässt sich nicht „wegdiversifizieren“.</span></li>
+          <li><span class="marker">Prämie</span><span>Der Investor erhält eine Risikoprämie für die Übernahme von Risiken — aber nur für systematisches Risiko.</span></li>
+        </ul>
+        <div class="formula-box mt-24">
+          E(r<sub>i</sub>) = r<sub>f</sub> + β<sub>i</sub> · [E(r<sub>m</sub>) − r<sub>f</sub>]
+        </div>
+        <div class="formula-box mt-16">
+          β<sub>i</sub> = cov(r<sub>i</sub>, r<sub>m</sub>) / σ<sub>m</sub><sup>2</sup>
+          = ρ<sub>i,m</sub> · σ<sub>i</sub> / σ<sub>m</sub>
+        </div>
+        <div class="callout mt-20">
+          <span class="tag">SML</span>
+          Diese lineare Funktion wird Security Market Line bzw. Wertpapierlinie genannt.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>CAPM · Beta-Faktor · SML</span><span>26 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-27"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="27 Beta CML SML"
+  data-slide-label="27 Beta CML SML"
+  data-slide-index="27"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Beta · CML vs. SML</span><span>27</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Beta und Linienlogik</div>
+    <h2 class="title-md" style="margin-top:18px;">CML bewertet effiziente Portfolios; SML bewertet einzelne Assets nach Beta.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="label">Beta</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">β</span><span>Maß für die Sensitivität eines Assets auf Änderungen des Gesamtmarktes.</span></li>
+          <li><span class="marker">standardisiert</span><span>Beta ist ein einheitsloses Risikomaß, weil es Kovarianz ins Verhältnis zur Varianz des Marktportfolios setzt.</span></li>
+          <li><span class="marker">1</span><span>Das Marktportefeuille hat ein Beta von 1.</span></li>
+          <li><span class="marker">empirisch</span><span>Vergangenheits-Betas sind nur schlechte Indikatoren für zukünftige Betas.</span></li>
+          <li><span class="marker">Zeit</span><span>Beta ist im Zeitablauf instabil; Tendenz zur Mean Reversion.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="label">CML vs. SML</div>
+        <table class="grid-tbl mt-16" style="font-size:20px;">
+          <thead>
+            <tr><th>Kapitalmarktlinie (CML)</th><th>Wertpapierlinie (SML)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Achse Risiko: Volatilität / Standardabweichung.</td>
+              <td>Achse Risiko: Beta.</td>
+            </tr>
+            <tr>
+              <td>Marktportfolio = effizientes Portfolio.</td>
+              <td>Wertpapiere liegen auf der Wertpapierlinie.</td>
+            </tr>
+            <tr>
+              <td>Einzelne Aktien können zusätzlich diversifizierbares Risiko enthalten.</td>
+              <td>Erwartete Rendite hängt linear vom systematischen Risiko ab.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callout mt-24">
+          <span class="tag">Grafik-Beispiele</span>
+          McDonald’s, IBM, Nike, Molson-Coors, Walmart, Newmont Mining, Amazon, Apple, GE und Tiffany werden als Beispielpunkte gezeigt.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Beta · Capital Market Line · Security Market Line</span><span>27 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-28"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="28 Multifaktormodelle"
+  data-slide-label="28 Multifaktormodelle"
+  data-slide-index="28"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Multifaktormodelle</span><span>28</span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Mehr als nur Marktrendite</div>
+    <h2 class="title-md" style="margin-top:18px;">Asset-Renditen können von mehreren makro- und mikroökonomischen Faktoren abhängen.</h2>
+  </div>
+
+  <div class="content-body" style="top:330px;">
+    <div class="two-col" style="gap:56px;">
+      <div>
+        <div class="label">Definition und Beispiele</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">Annahme</span><span>Asset-Renditen werden nicht nur von Marktrenditen bestimmt.</span></li>
+          <li><span class="marker">Bsp.</span><span>Zinsen, Inflationsraten, industriespezifische Einflussfaktoren.</span></li>
+          <li><span class="marker">Def.</span><span>Multifaktormodelle sind Gleichgewichtsmodelle, in denen Wertpapierrenditen von mehreren makro- und mikroökonomischen Faktoren abhängig sind.</span></li>
+          <li><span class="marker">kein M</span><span>Ein Marktportfolio ist nicht mehr notwendig.</span></li>
+          <li><span class="marker">Faktor</span><span>Ein Faktor ist ein Element, zu dem mehrere Variablen korreliert sind.</span></li>
+          <li><span class="marker">Markt</span><span>Beispiel eines Faktors: Marktfaktor = systematischer Faktor.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="label">Arten von Faktormodellen</div>
+        <table class="grid-tbl mt-16" style="font-size:20px;">
+          <thead><tr><th>Typ</th><th>Inhalt</th></tr></thead>
+          <tbody>
+            <tr><td class="k">Makroökonomische Faktormodelle</td><td>Unerwartete Ereignisse können makroökonomische Variablen und zukünftige Cashflows beeinflussen.</td></tr>
+            <tr><td class="k">Fundamentalfaktormodelle</td><td>Erklärung von Bewertungsunterschieden zwischen Segmenten, z. B. KBV, KGV.</td></tr>
+            <tr><td class="k">Statistische Faktormodelle</td><td>Erklärung historischer Portfoliorenditen anhand quantitativer Faktoren; Backtesting.</td></tr>
+          </tbody>
+        </table>
+        <div class="callout mt-24">
+          <span class="tag">Heute</span>
+          Multifaktormodelle werden im aktiven wie passiven Portfoliomanagement eingesetzt.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>Multifaktormodelle · Makro · Fundamental · Statistik</span><span>28 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-29"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="29 APT"
+  data-slide-label="29 APT"
+  data-slide-index="29"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Arbitrage Pricing Theory</span><span>29</span></div>
+
+  <div class="content-head" style="top:120px;">
+    <div class="eyebrow">Die Alternative zum CAPM</div>
+    <h2 class="title-md" style="margin-top:14px;">APT erklärt Rendite als lineare Funktion mehrerer Faktorsensitivitäten.</h2>
+  </div>
+
+  <div class="content-body" style="top:280px;">
+    <div class="two-col" style="gap:44px;">
+      <div>
+        <div class="label">APT-Grundlagen</div>
+        <ul class="clean mt-16">
+          <li><span class="marker">Def.</span><span>APT ist ein Multifaktor-Gleichgewichtsmodell.</span></li>
+          <li><span class="marker">linear</span><span>Die erwartete Rendite eines wohl diversifizierten Portfolios ist eine lineare Funktion seiner Faktorsensitivitäten.</span></li>
+          <li><span class="marker">Annahmen</span><span>Weniger streng als beim CAPM; Existenz eines Marktportfolios ist nicht erforderlich.</span></li>
+          <li><span class="marker">Modell</span><span>Asset-Renditen werden von einem multivariaten Faktormodell beschrieben.</span></li>
+          <li><span class="marker">Diversifikation</span><span>Wohl diversifizierte Portefeuilles können asset-spezifische Risiken eliminieren; empirisch bestätigt für n → ∞.</span></li>
+          <li><span class="marker">Arbitrage</span><span>Keine Arbitragemöglichkeiten in wohl diversifizierten Portefeuilles; Wertpapiere sind stets richtig bewertet.</span></li>
+        </ul>
+        <div class="formula-box mt-20">
+          E(r<sub>p</sub>) = r<sub>f</sub> + λ<sub>1</sub>β<sub>p,1</sub> + λ<sub>2</sub>β<sub>p,2</sub> + … + λ<sub>n</sub>β<sub>p,n</sub>
+        </div>
+        <p class="body mt-12">λ<sub>i</sub> = Faktorrisikoprämie i · β<sub>p,i</sub> = Sensitivität des Portfolios auf Faktor i.</p>
+      </div>
+
+      <div>
+        <div class="label">Unterschiede zwischen APT und CAPM</div>
+        <table class="grid-tbl mt-16" style="font-size:19px;">
+          <thead><tr><th>APT</th><th>CAPM</th></tr></thead>
+          <tbody>
+            <tr><td>Keine Verteilungshypothese der Wertpapierrenditen erforderlich.</td><td>Stärker an Modellannahmen gebunden.</td></tr>
+            <tr><td>Mehrdimensionale Risikobetrachtung.</td><td>Marktrisiko als zentrale Risikodimension.</td></tr>
+            <tr><td>Kenntnis eines Marktportfolios irrelevant.</td><td>Marktportfolio zentral.</td></tr>
+          </tbody>
+        </table>
+
+        <div class="label mt-24">Vorteile und Nachteile der APT</div>
+        <div class="mt-16" style="display:grid; grid-template-columns:1fr 1fr; gap:18px;">
+          <div class="callout">
+            <span class="tag">Vorteile</span>
+            Mehrdimensionale Risikobetrachtung; weniger rigide Annahmen als CAPM.
+          </div>
+          <div class="callout">
+            <span class="tag">Nachteile</span>
+            Identifikation der Risikofaktoren; Sensitivitäten und Einflussfaktoren sind nicht zeitstabil.
+          </div>
+        </div>
+        <div class="callout mt-18">
+          <span class="tag">Folge</span>
+          Nicht zeitstabile Faktoren erhöhen den Wartungsaufwand des Systems und verringern die Aussagekraft.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot"><span>APT · Faktorrisikoprämien · CAPM-Vergleich</span><span>29 / 30</span></div>
+</section>
+
+<section
+  id="kapitel-5-slide-30"
+  class="module-slide"
+  data-module="asset-management"
+  data-chapter-key="kapitel-5"
+  data-chapter-short="Kapitel 5"
+  data-chapter-title="Kapitel 5 · Grundlagen der Portfoliotheorie"
+  data-screen-label="30 Zusammenfassung"
+  data-slide-label="30 Zusammenfassung"
+  data-slide-index="30"
+  data-slide-total="30">
+  <div class="chrome-top"><span>Zusammenfassung</span><span>30 <span class="dot">●</span></span></div>
+
+  <div class="content-head">
+    <div class="eyebrow">Merksätze zum Mitnehmen</div>
+    <h2 class="title-md" style="margin-top:18px;">Acht Ankerpunkte für die Klausur.</h2>
+  </div>
+
+  <div class="content-body" style="top:350px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px 40px;">
+      <div class="callout" style="padding:22px 28px; font-size:22px;">
+        <span class="tag">01 · Markowitz</span>
+        Portfoliorisiko hängt nicht nur von Einzelrisiken ab, sondern auch von Kovarianzen bzw. Korrelationen.
+      </div>
+      <div class="callout" style="padding:22px 28px; font-size:22px;">
+        <span class="tag">02 · Diversifikation</span>
+        Je niedriger die Korrelation zwischen Assets, desto größer der Diversifikationsvorteil.
+      </div>
+      <div class="callout" style="padding:22px 28px; font-size:22px;">
+        <span class="tag">03 · Effizienzkurve</span>
+        Effiziente Portfolios dominieren andere Portfolios bei Rendite, Risiko oder beidem.
+      </div>
+      <div class="callout" style="padding:22px 28px; font-size:22px;">
+        <span class="tag">04 · Risikoarten</span>
+        Idiosynkratisches Risiko ist diversifizierbar; systematisches Risiko bleibt bestehen.
+      </div>
+      <div class="callout" style="padding:22px 28px; font-size:22px;">
+        <span class="tag">05 · Tobin</span>
+        Tobin ergänzt das risikolose Asset. CML = effiziente Kombination aus risikoloser Anlage und Marktportfolio.
+      </div>
+      <div class="callout" style="padding:22px 28px; font-size:22px;">
+        <span class="tag">06 · CML</span>
+        Das Tangentialportfolio entspricht im Gleichgewicht dem Marktportfolio aller riskanten Assets.
+      </div>
+      <div class="callout" style="padding:22px 28px; font-size:22px;">
+        <span class="tag">07 · CAPM</span>
+        Erwartete Rendite = risikoloser Zins + Beta × Marktrisikoprämie. Entlohnt wird nur systematisches Risiko.
+      </div>
+      <div class="callout" style="padding:22px 28px; font-size:22px;">
+        <span class="tag">08 · APT</span>
+        APT ersetzt die Ein-Faktor-Logik des CAPM durch mehrere Faktoren und benötigt kein beobachtbares Marktportfolio.
+      </div>
+    </div>
+  </div>
+
+  <div class="chrome-bot">
+    <span>Asset Management · HBW · Kapitel 5</span>
+    <span>30 / 30 · Ende</span>
+  </div>
+</section>
+
+<!-- MODULE_CHAPTER_END: kapitel-5 -->
