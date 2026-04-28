@@ -1,0 +1,525 @@
+<!-- MODULE_CHAPTER_START: kapitel-4 | Kapitel 4 · Mathematische & statistische Grundlagen | slides=22 -->
+<!-- Dieses Topic ist ein HTML-Fragment: keine <html>, <head>, <body> Tags einfügen. -->
+
+<section class="slide-title module-slide chapter-start" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-start="true" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="01 Title" data-slide-index="1" data-slide-label="01 Title" data-slide-total="22" id="kapitel-4-slide-01">
+<div class="chrome-top"><span>HBW · Asset Management</span><span>Kapitel 4 <span class="dot">●</span></span></div>
+<div class="big-mark">§4</div>
+<div class="stack">
+<div class="eyebrow">Lernzusammenfassung · Kapitel 4</div>
+<h1 class="display" style="margin-top:20px;">Mathematische &amp;<br/><em style="font-style:italic; color:var(--accent);">statistische Grundlagen.</em></h1>
+<p class="sub" style="margin-top:28px; max-width:1100px;">Durchschnittswerte · Verzinsung · Duration · Risikokennzahlen · Value-at-Risk · Korrelation.</p>
+</div>
+<div class="meta">
+<div class="block"><div class="k">Kurs</div><div class="v">Asset Management</div></div>
+<div class="block"><div class="k">Kapitel</div><div class="v">4 · Math. &amp; stat. Grundlagen</div></div>
+<div class="block"><div class="k">Umfang</div><div class="v">10 Themen · 20 Folien</div></div>
+</div>
+<div class="chrome-bot"><span>Lernzusammenfassung</span><span>Hochschule · Stand April 2026</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="02 Agenda" data-slide-index="2" data-slide-label="02 Agenda" data-slide-total="22" id="kapitel-4-slide-02">
+<div class="chrome-top"><span>Inhalt</span><span>02</span></div>
+<div class="content-head" style="top:160px;"><div class="eyebrow">Agenda</div><h2 class="title-lg" style="margin-top:14px;">Zehn Bausteine dieses Kapitels.</h2></div>
+<div class="content-body" style="top:380px;">
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:24px;">
+<div class="card" style="padding:24px;"><div class="card-eyebrow" style="font-size:13px;">Teil 01</div><div class="card-title" style="font-size:26px;">Durchschnittswerte</div><div class="card-body" style="font-size:17px;">Arithmetisches Mittel, Median, Modus, gewichtetes &amp; geometrisches Mittel.</div></div>
+<div class="card" style="padding:24px;"><div class="card-eyebrow" style="font-size:13px;">Teil 02</div><div class="card-title" style="font-size:26px;">Verzinsungsformeln</div><div class="card-body" style="font-size:17px;">Unterjährige &amp; stetige Verzinsung; diskrete ↔ stetige Renditen.</div></div>
+<div class="card" style="padding:24px;"><div class="card-eyebrow" style="font-size:13px;">Teil 03</div><div class="card-title" style="font-size:26px;">Erwartete Rendite</div><div class="card-body" style="font-size:17px;">Zufallsvariablen, Szenarioanalyse, gewichtete Erwartungswerte.</div></div>
+<div class="card" style="padding:24px;"><div class="card-eyebrow" style="font-size:13px;">Teil 04</div><div class="card-title" style="font-size:26px;">Anleihebewertung</div><div class="card-body" style="font-size:17px;">Barwertprinzip, Kurs vs. Rendite, pari/über pari/unter pari.</div></div>
+<div class="card" style="padding:24px;"><div class="card-eyebrow" style="font-size:13px;">Teil 05</div><div class="card-title" style="font-size:26px;">Duration</div><div class="card-body" style="font-size:17px;">Macaulay-Duration, Modified Duration, Duration eines Portfolios.</div></div>
+<div class="card" style="padding:24px;"><div class="card-eyebrow" style="font-size:13px;">Teil 06</div><div class="card-title" style="font-size:26px;">Konvexität</div><div class="card-body" style="font-size:17px;">Krümmung des Kurs-Rendite-Zusammenhangs; Kombination mit Duration.</div></div>
+<div class="card" style="padding:24px;"><div class="card-eyebrow" style="font-size:13px;">Teil 07</div><div class="card-title" style="font-size:26px;">Risikokennzahlen</div><div class="card-body" style="font-size:17px;">Volatilität, Normalverteilung, Schiefe, Wölbung (Kurtosis).</div></div>
+<div class="card" style="padding:24px;"><div class="card-eyebrow" style="font-size:13px;">Teil 08</div><div class="card-title" style="font-size:26px;">Value-at-Risk</div><div class="card-body" style="font-size:17px;">VaR-Berechnung, Varianz-Kovarianz, Historische Simulation, Monte Carlo.</div></div>
+<div class="card" style="padding:24px;"><div class="card-eyebrow" style="font-size:13px;">Teil 09</div><div class="card-title" style="font-size:26px;">Kovarianz &amp; Korrelation</div><div class="card-body" style="font-size:17px;">Linearer Zusammenhang zwischen Renditen; ρ ∈ [−1, +1].</div></div>
+<div class="card" style="padding:24px;"><div class="card-eyebrow" style="font-size:13px;">Teil 10</div><div class="card-title" style="font-size:26px;">Diversifikation</div><div class="card-body" style="font-size:17px;">Risikoreduktion durch Kombination von Assets.</div></div>
+</div>
+</div>
+<div class="chrome-bot"><span>Kapitel 4 · Mathematische &amp; stat. Grundlagen</span><span>02 / 20</span></div>
+</section>
+
+<section class="slide-divider module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="03 Divider" data-slide-index="3" data-slide-label="03 Divider" data-slide-total="22" id="kapitel-4-slide-03">
+<div class="chrome-top"><span>Teil 01</span><span>03 <span class="dot">●</span></span></div>
+<div class="big-num">01</div>
+<div class="sub-label" style="top:180px;">Durchschnittswerte</div>
+<div class="big-title">Arithmetisches,<br/><em style="color:var(--accent-2);">geometrisches &amp; mehr.</em></div>
+<div class="chrome-bot"><span>Mittelwerte · Median · Modus · Gewichtung</span><span>03 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="04 Arithmetisches Mittel" data-slide-index="4" data-slide-label="04 Arithmetisches Mittel" data-slide-total="22" id="kapitel-4-slide-04">
+<div class="chrome-top"><span>4.1 · Durchschnittswerte</span><span>04</span></div>
+<div class="content-head">
+<div class="eyebrow">Lagemaße</div>
+<h2 class="title-md" style="margin-top:14px;">Arithmetisches Mittel, Median &amp; Modus.</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="label">Arithmetisches Mittel</div>
+<div class="formula-box mt-16">x<sub>arithm.</sub> = 1/n · Σ<sub>i=1</sub><sup>n</sup> x<sub>i</sub></div>
+<p class="body mt-16">Summe der Beobachtungswerte dividiert durch die Zahl der Beobachtungen. Ideales Maß für <strong>Einperiodenrenditen</strong> – unterstellt, dass Erträge am Ende jeder Periode entnommen werden (keine Zinseszinsen).</p>
+<div class="callout mt-16"><span class="tag">Anwendungen</span> Durchschnittliche Verzinsung von Unternehmensanleihen · BIP-Wachstum Euro-Zone · Abweichungsberechnung.</div>
+<p class="body mt-16" style="color:var(--bad);"><strong>Nachteil:</strong> Hohe Sensitivität gegenüber Extremwerten.</p>
+</div>
+<div>
+<div class="label">Median</div>
+<p class="body mt-16">Mittlerer Wert einer <strong>der Größe nach sortierten</strong> Gruppe: ungerade n → Position (n+1)/2; gerade n → Durchschnitt der n/2- und (n+2)/2-Position.</p>
+<p class="body mt-16">Geeigneter bei <strong>Extremwerten</strong> – robuster als das arithmetische Mittel.</p>
+<div class="label mt-24">Modus (Modalwert)</div>
+<p class="body mt-16">Häufigster Wert einer diskreten Verteilung bzw. Maximum einer stetigen Häufigkeitsverteilung. Anwendung z. B. bei Umfragen („Sieger“-Bestimmung).</p>
+<div class="label mt-24">Gewichteter Durchschnitt</div>
+<div class="formula-box mt-16">r = Σ<sub>i=1</sub><sup>n</sup> w<sub>i</sub> · x<sub>i</sub><br/><span style="font-size:17px; color:var(--muted);">w<sub>i</sub> = Anteil Asset i am Portfolio</span></div>
+</div>
+</div>
+</div>
+<div class="chrome-bot"><span>Arithmetisches Mittel · Median · Modus · Gewichtung</span><span>04 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="05 Geometrisches Mittel" data-slide-index="5" data-slide-label="05 Geometrisches Mittel" data-slide-total="22" id="kapitel-4-slide-05">
+<div class="chrome-top"><span>4.2 · Geometrisches Mittel</span><span>05</span></div>
+<div class="content-head">
+<div class="eyebrow">Durchschnitt bei Wiederanlage</div>
+<h2 class="title-md" style="margin-top:14px;">Geometrisches Mittel – der wahre Wert bei Zeitreihen.</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="label">Allgemeine Definition</div>
+<div class="formula-box mt-16">x<sub>geom</sub> = <sup>n</sup>√(x<sub>1</sub> · x<sub>2</sub> · … · x<sub>T</sub>)</div>
+<p class="body mt-16">Verwendung bei <strong>Zeitreihen</strong> oder durchschnittlichen <strong>Wachstumsraten</strong> mit Wiederanlage der Zinsen (Zinseszins-Effekt).</p>
+<div class="label mt-24">Geometrisches Mittel von Renditen</div>
+<div class="formula-box mt-16">(1 + r<sub>geom</sub>)<sup>T</sup> = ∏<sub>i=1</sub><sup>T</sup> (1 + r<sub>i</sub>)<br/>⇔ r<sub>geom</sub> = <sup>n</sup>√[∏(1+r<sub>i</sub>)] − 1 = <sup>n</sup>√(V<sub>T</sub>/V<sub>0</sub>) − 1</div>
+</div>
+<div>
+<div class="label">Übung – Arithm. vs. Geometrisch</div>
+<table class="grid-tbl mt-16" style="font-size:19px;">
+<tr><th>t</th><th>Kurs (EUR)</th></tr>
+<tr><td>1</td><td>100,00</td></tr>
+<tr><td>2</td><td>200,00</td></tr>
+<tr><td>3</td><td>100,00</td></tr>
+</table>
+<p class="body mt-16">Rendite Jahr 1: <strong>+100,0 %</strong>  |  Rendite Jahr 2: <strong>−50,0 %</strong></p>
+<div class="formula-box mt-16">r<sub>arithm.</sub> = (100% − 50%) / 2 = <strong style="color:var(--bad);">25%</strong><br/>r<sub>geom</sub> = √[(1+1,0)·(1−0,5)] − 1 = <strong style="color:var(--ok);">0%</strong></div>
+<div class="callout mt-16"><span class="tag">Merke</span>Das arithmetische Mittel liefert einen <strong>falschen Wert</strong>, wenn Zinseszinsen eine Rolle spielen!</div>
+</div>
+</div>
+</div>
+<div class="chrome-bot"><span>Geometrisches Mittel · Übung</span><span>05 / 20</span></div>
+</section>
+
+<section class="slide-divider module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="06 Divider" data-slide-index="6" data-slide-label="06 Divider" data-slide-total="22" id="kapitel-4-slide-06">
+<div class="chrome-top"><span>Teil 02</span><span>06 <span class="dot">●</span></span></div>
+<div class="big-num">02</div>
+<div class="sub-label" style="top:180px;">Verzinsungsformeln &amp; Renditeumrechnung</div>
+<div class="big-title">Diskret<br/><em style="color:var(--accent-2);">↔ stetig.</em></div>
+<div class="chrome-bot"><span>Unterjährige Verzinsung · Stetige Renditen</span><span>06 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="07 Verzinsung" data-slide-index="7" data-slide-label="07 Verzinsung" data-slide-total="22" id="kapitel-4-slide-07">
+<div class="chrome-top"><span>4.3 · Verzinsung</span><span>07</span></div>
+<div class="content-head">
+<div class="eyebrow">Verzinsungsformeln</div>
+<h2 class="title-md" style="margin-top:14px;">Unterjährige und stetige Verzinsung.</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="label">Unterjährige Verzinsung</div>
+<div class="formula-box mt-16">K<sub>T</sub> = K<sub>0</sub> · (1 + i/m)<sup>m·T</sup><br/><span style="font-size:17px; color:var(--muted);">m = Anzahl Zinsperioden pro Jahr</span></div>
+<p class="body mt-16">Für T = 1 Jahr: K<sub>T</sub> = K<sub>0</sub> · (1 + i/m)<sup>m</sup></p>
+</div>
+<div>
+<div class="label">Stetige Verzinsung</div>
+<div class="formula-box mt-16">K<sub>1</sub> = K<sub>0</sub> · lim<sub>m→∞</sub> (1 + i/m)<sup>m</sup> = K<sub>0</sub> · e<sup>i</sup><br/>⇔ 1 + r<sub>diskret</sub> = e<sup>r<sub>stetig</sub></sup></div>
+<p class="body mt-16"><strong>Umrechnungsformeln:</strong></p>
+<div class="formula-box mt-16">r<sub>diskret</sub> = e<sup>r<sub>stetig</sub></sup> − 1<br/>ln(1 + r<sub>diskret</sub>) = r<sub>stetig</sub></div>
+</div>
+</div>
+<div class="label mt-40">Durchschnittsbildung: Diskret vs. Stetig</div>
+<div class="mt-16" style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+<div class="card" style="padding:24px;">
+<div class="card-title" style="font-size:28px;">Diskrete Renditen</div>
+<p class="card-body">Durchschnitt über die Zeit mittels <strong>geometrischen</strong> Mittelwerts.</p>
+<div class="formula-box mt-16" style="font-size:18px;">(1+r<sub>geom</sub>)<sup>T</sup> = ∏<sub>i=1</sub><sup>T</sup> (1+r<sub>i</sub>) ⇔ r<sub>geom</sub> = <sup>T</sup>√(V<sub>T</sub>/V<sub>0</sub>) − 1</div>
+</div>
+<div class="card" style="padding:24px;">
+<div class="card-title" style="font-size:28px;">Stetige Renditen</div>
+<p class="card-body">Durchschnitt über die Zeit mittels <strong>arithmetischen</strong> Mittelwerts.</p>
+<div class="formula-box mt-16" style="font-size:18px;">r<sub>stetig,Ø</sub> = (1/T) · Σ<sub>i=1</sub><sup>T</sup> r<sub>stetig,i</sub></div>
+</div>
+</div>
+</div>
+<div class="chrome-bot"><span>Verzinsung · Diskrete ↔ Stetige Renditen</span><span>07 / 20</span></div>
+</section>
+
+<section class="slide-divider module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="08 Divider" data-slide-index="8" data-slide-label="08 Divider" data-slide-total="22" id="kapitel-4-slide-08">
+<div class="chrome-top"><span>Teil 03–04</span><span>08 <span class="dot">●</span></span></div>
+<div class="big-num">03</div>
+<div class="sub-label" style="top:180px;">Erwartete Rendite &amp; Anleihebewertung</div>
+<div class="big-title">Erwartung<br/><em style="color:var(--accent-2);">&amp; Barwert.</em></div>
+<div class="chrome-bot"><span>Zufallsvariablen · Szenarien · Anleihepreise</span><span>08 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="09 Erwartete Rendite" data-slide-index="9" data-slide-label="09 Erwartete Rendite" data-slide-total="22" id="kapitel-4-slide-09">
+<div class="chrome-top"><span>4.4 · Erwartete Rendite</span><span>09</span></div>
+<div class="content-head">
+<div class="eyebrow">Zufallsvariablen</div>
+<h2 class="title-md" style="margin-top:14px;">Erwartete Rendite μ – gewichteter Durchschnitt möglicher Renditen.</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="label">Definition</div>
+<div class="formula-box mt-16">μ = Σ<sub>i=1</sub><sup>n</sup> r<sub>i</sub> · p<sub>i</sub></div>
+<p class="body mt-16">Die Zukunft ist ungewiss → erwartete Renditen sind <strong>Zufallsvariablen</strong>. Investoren gewichten mögliche Renditen r<sub>i</sub> mit Eintrittswahrscheinlichkeiten p<sub>i</sub>.</p>
+</div>
+<div>
+<div class="label">Beispiel: Birne-Aktie (Kurs aktuell 100 €)</div>
+<table class="grid-tbl mt-16" style="font-size:19px;">
+<tr><th>Szenario</th><th>Kurs in 1 Jahr</th><th>Rendite</th><th>p<sub>i</sub></th></tr>
+<tr><td>Boom</td><td>140 €</td><td>+40 %</td><td>25 %</td></tr>
+<tr><td>Normal</td><td>110 €</td><td>+10 %</td><td>50 %</td></tr>
+<tr><td>Krise</td><td>80 €</td><td>−20 %</td><td>25 %</td></tr>
+</table>
+<div class="formula-box mt-16">μ<sub>ABC</sub> = 0,25·20% + 0,5·10% + 0,25·(−20%) = <strong>10%</strong></div>
+</div>
+</div>
+</div>
+<div class="chrome-bot"><span>Erwartete Rendite · Szenarioanalyse</span><span>09 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="10 Anleihebewertung" data-slide-index="10" data-slide-label="10 Anleihebewertung" data-slide-total="22" id="kapitel-4-slide-10">
+<div class="chrome-top"><span>4.5 · Anleihebewertung</span><span>10</span></div>
+<div class="content-head">
+<div class="eyebrow">Barwertprinzip</div>
+<h2 class="title-md" style="margin-top:14px;">Der Wert einer Anleihe – diskontierte Zahlungsströme.</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="label">Barwertformel</div>
+<div class="formula-box mt-16">K<sub>A</sub> = Σ<sub>t=1</sub><sup>T</sup> [r<sub>n</sub> / (1+r)<sup>t</sup>] + RK / (1+r)<sup>T</sup></div>
+<p class="body mt-16">RK = Rückzahlungskurs (i.d.R. 100%) · r = Renditeforderung · T = Restlaufzeit · r<sub>n</sub> = Nominalzinssatz</p>
+</div>
+<div>
+<div class="label">Kurs vs. Nominalzins – Drei Fälle</div>
+<div class="mt-16" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px;">
+<div class="card" style="padding:20px; text-align:center;"><div style="font-family:var(--serif); font-size:32px; color:var(--ok);">Über pari</div><div style="font-size:18px; color:var(--ink-2);">r<sub>n</sub> &gt; r</div></div>
+<div class="card" style="padding:20px; text-align:center;"><div style="font-family:var(--serif); font-size:32px; color:var(--ink);">Zu pari</div><div style="font-size:18px; color:var(--ink-2);">r<sub>n</sub> = r</div></div>
+<div class="card" style="padding:20px; text-align:center;"><div style="font-family:var(--serif); font-size:32px; color:var(--bad);">Unter pari</div><div style="font-size:18px; color:var(--ink-2);">r<sub>n</sub> &lt; r</div></div>
+</div>
+<div class="callout mt-16"><span class="tag">Beispiel</span>Kupon 5,0 % · 7 Jahre Laufzeit · Kurs 98,5 € → Renditeforderung <strong>r = 5,26 %</strong></div>
+</div>
+</div>
+</div>
+<div class="chrome-bot"><span>Anleihebewertung · Barwertprinzip</span><span>10 / 20</span></div>
+</section>
+
+<section class="slide-divider module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="11 Divider" data-slide-index="11" data-slide-label="11 Divider" data-slide-total="22" id="kapitel-4-slide-11">
+<div class="chrome-top"><span>Teil 05–06</span><span>11 <span class="dot">●</span></span></div>
+<div class="big-num">05</div>
+<div class="sub-label" style="top:180px;">Zinsänderungsrisiken</div>
+<div class="big-title">Duration<br/><em style="color:var(--accent-2);">&amp; Konvexität.</em></div>
+<div class="chrome-bot"><span>Macaulay · Modified · Konvexität</span><span>11 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="12 Duration" data-slide-index="12" data-slide-label="12 Duration" data-slide-total="22" id="kapitel-4-slide-12">
+<div class="chrome-top"><span>4.6 · Duration</span><span>12</span></div>
+<div class="content-head">
+<div class="eyebrow">Macaulay-Duration (1938)</div>
+<h2 class="title-md" style="margin-top:14px;">Durchschnittliche Kapitalbindungsdauer.</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="formula-box">D = [ Σ t·CF<sub>t</sub>·(1+r)<sup>−t</sup> ] / [ Σ CF<sub>t</sub>·(1+r)<sup>−t</sup> ]</div>
+<p class="body mt-16">CF<sub>t</sub> = Cash Flow in t · r = Marktzinssatz · T = Restlaufzeit · t = Zeitindex</p>
+<div class="callout mt-16"><span class="tag">Annahmen</span> Flache Zinsstrukturkurve · Zinsänderungen nur als Parallelverschiebungen.</div>
+</div>
+<div>
+<div class="label">Sensitivitäten der Duration</div>
+<p class="body mt-16">Die Duration ist <strong>umso höher</strong>, je niedriger Coupon &amp; Rendite, je länger die Restlaufzeit, je niedriger/später vorzeitige Tilgungen.</p>
+<p class="body mt-16"><strong>Zero-Bond:</strong> Duration = Restlaufzeit.</p>
+<p class="body mt-16"><strong>Maximale Duration:</strong> D<sub>max</sub> = 1/r − 1 (selbst bei unendlicher Laufzeit).</p>
+</div>
+</div>
+<div class="label mt-24">Barwerte-Waage</div>
+<p class="body">Steigt der Marktzins, fällt der Kurs (negativer <strong>Marktwerteffekt</strong>), aber Kuponzinsen können höher wiederangelegt werden (positiver <strong>Wiederanlageeffekt</strong>). Die Duration bestimmt den Zeitpunkt, an dem sich beide Effekte <strong>genau aufheben</strong>.</p>
+</div>
+<div class="chrome-bot"><span>Macaulay-Duration · Sensitivitäten</span><span>12 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="13 Modified Duration" data-slide-index="13" data-slide-label="13 Modified Duration" data-slide-total="22" id="kapitel-4-slide-13">
+<div class="chrome-top"><span>4.7 · Portfolio &amp; Modified</span><span>13</span></div>
+<div class="content-head">
+<div class="eyebrow">Erweiterungen</div>
+<h2 class="title-md" style="margin-top:14px;">Duration des Portfolios &amp; Modified Duration.</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="label">Duration eines Portfolios</div>
+<div class="formula-box mt-16">D<sub>Portfolio</sub> = Σ<sub>i=1</sub><sup>n</sup> w<sub>i</sub> · D<sub>i</sub></div>
+<p class="body mt-16">w<sub>i</sub> = Anteil des Portfolio-Wertes in Anleihe i. Durationen sind <strong>additiv verknüpfbar</strong> – jeder Zahlungsstrom wird mit seinem Barwertanteil gewichtet.</p>
+<div class="callout mt-16"><span class="tag">Erhöhung der Duration</span>Kurzläufer durch Langläufer ersetzen · Langläufer ergänzen.</div>
+</div>
+<div>
+<div class="label">Modified Duration (MD)</div>
+<div class="formula-box mt-16">MD = Macaulay-Duration / (1 + r<sub>M</sub>)</div>
+<p class="body mt-16">Maßzahl für die <strong>Sensitivität</strong> einer Anleihe – relative Kursänderung aufgrund einer relativen Marktzinsänderung. MD = <strong>Elastizität</strong> des Anleihekurses gegenüber r<sub>M</sub>.</p>
+</div>
+</div>
+<div class="card mt-24" style="padding:20px; text-align:center;">
+<div class="card-eyebrow" style="font-size:13px;">Beispiel · Anleihedaten 30.11.2009</div>
+<table class="grid-tbl mt-16" style="font-size:17px;">
+<tr><th>Anleihe</th><th>Kurs</th><th>Rendite</th><th>Duration</th><th>Mod. Duration</th><th>Konvexität</th></tr>
+<tr><td>8,5% ThyssenKrupp 02/16</td><td>111,00</td><td>6,30%</td><td>4,88</td><td>4,73</td><td>0,28</td></tr>
+<tr><td>8,0% Daimler Fin. 06/10</td><td>103,35</td><td>1,69%</td><td>0,52</td><td>0,51</td><td>0,01</td></tr>
+<tr><td>3,5% Bundesrep. 01/16</td><td>105,24</td><td>2,56%</td><td>5,44</td><td>5,37</td><td>0,35</td></tr>
+<tr><td>3,125% Bundesobl. 04/10</td><td>100,94</td><td>0,55%</td><td>0,35</td><td>0,35</td><td>0,00</td></tr>
+</table>
+</div>
+</div>
+<div class="chrome-bot"><span>Portfolio-Duration · Modified Duration</span><span>13 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="14 Konvexitaet" data-slide-index="14" data-slide-label="14 Konvexitaet" data-slide-total="22" id="kapitel-4-slide-14">
+<div class="chrome-top"><span>4.8 · Konvexität</span><span>14</span></div>
+<div class="content-head">
+<div class="eyebrow">Krümmung</div>
+<h2 class="title-md" style="margin-top:14px;">Konvexität – die bessere Näherung.</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="label">Warum Konvexität?</div>
+<p class="body mt-16">Der tatsächliche Zusammenhang zwischen Anleihekurs und Renditeforderung ist <strong>konvex und nicht linear</strong>. Die Modified Duration <strong>unterschätzt</strong> die Wirkung von Marktzinsänderungen.</p>
+<div class="label mt-24">Formel</div>
+<div class="formula-box mt-16" style="font-size:18px;">C = [ Σ t·CF<sub>t</sub>·(1+r)<sup>−t</sup>·(1+t) ] / [ Σ CF<sub>t</sub>·(1+r)<sup>−t</sup>·(1+t)<sup>2</sup> ]</div>
+<p class="body mt-16">Die Konvexität beschreibt die <strong>Änderung der Duration</strong> in Abhängigkeit der Renditeforderung (= Krümmung).</p>
+</div>
+<div>
+<div class="label">Relative Kursänderung (Duration + Konvexität)</div>
+<div class="formula-box mt-16" style="font-size:19px;">Relative Kursänderung = −MD·Δr + 0,5·C·(Δr)<sup>2</sup></div>
+<div class="callout mt-16"><span class="tag">Merke</span>Bei <strong>gleicher Modified Duration</strong> ist die Anlage mit <strong>höherer Konvexität</strong> wertvoller: fallende Zinsen → höhere Kursgewinne; steigende Zinsen → weniger hohe Abschläge.</div>
+<div class="formula-box mt-16" style="font-size:17px;"><strong>Beispiel:</strong> Duration 4,84 · Konvexität 14,86 · Rendite 5,26%<br/>C = (1·2·4,54 + 2·3·4,13 + 3·4·3,76 + 4·5·71,72) / (1,1²·84,15) = <strong>14,86</strong></div>
+</div>
+</div>
+</div>
+<div class="chrome-bot"><span>Konvexität · Krümmung des Kurs-Rendite-Zusammenhangs</span><span>14 / 20</span></div>
+</section>
+
+<section class="slide-divider module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="15 Divider" data-slide-index="15" data-slide-label="15 Divider" data-slide-total="22" id="kapitel-4-slide-15">
+<div class="chrome-top"><span>Teil 07</span><span>15 <span class="dot">●</span></span></div>
+<div class="big-num">07</div>
+<div class="sub-label" style="top:180px;">Risikokennzahlen</div>
+<div class="big-title">Volatilität<br/><em style="color:var(--accent-2);">&amp; Momente.</em></div>
+<div class="chrome-bot"><span>Standardabweichung · Schiefe · Kurtosis</span><span>15 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="16 Volatilitaet" data-slide-index="16" data-slide-label="16 Volatilitaet" data-slide-total="22" id="kapitel-4-slide-16">
+<div class="chrome-top"><span>4.9 · Volatilität</span><span>16</span></div>
+<div class="content-head">
+<div class="eyebrow">Risikomaß</div>
+<h2 class="title-md" style="margin-top:14px;">Standardabweichung σ – Wurzel der Varianz.</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="formula-box">σ = √[ 1/(n−1) · Σ (r<sub>i</sub> − r̄)<sup>2</sup> ]</div>
+<p class="body mt-16">Je höher σ, desto stärker weichen die beobachteten Renditen vom Mittelwert ab – und desto höher das Risiko. <strong>Gleiche Dimension wie Erwartungswert</strong> (z. B. % bei Renditen).</p>
+<div class="label mt-24">µ-Regel &amp; σ-Regel</div>
+<p class="body mt-16">Asset A ist <strong>vorteilhafter</strong> als B, wenn A bei gleichem σ eine höhere Rendite erzielt (µ-Regel) oder dieselbe Rendite bei geringerem σ (σ-Regel).</p>
+</div>
+<div>
+<div class="label">Annualisierung</div>
+<div class="formula-box mt-16">σ<sub>annual.</sub> = √250 · σ<sub>d</sub> = √52 · σ<sub>w</sub> = √12 · σ<sub>m</sub> = √4 · σ<sub>q</sub></div>
+<div class="label mt-24">Volatilität US-Kapitalmarkt (1926–2017)</div>
+<table class="grid-tbl mt-16" style="font-size:18px;">
+<tr><th>Investition</th><th style="text-align:right;">Volatilität</th></tr>
+<tr><td>Aktien kleiner Unternehmen</td><td style="text-align:right;">39,2 %</td></tr>
+<tr><td>S&amp;P 500</td><td style="text-align:right;">19,8 %</td></tr>
+<tr><td>Unternehmensanleihen</td><td style="text-align:right;">6,4 %</td></tr>
+<tr><td>Schatzwechsel</td><td style="text-align:right;">3,1 %</td></tr>
+</table>
+<div class="label mt-24">Standardfehler (Schätzfehler)</div>
+<p class="body mt-16">σ(Durchschnitt) = σ(individuell) / √(Anzahl Beobachtungen)</p>
+<p class="body">95%-Konfidenzintervall: histor. Ø ± 2 × Standardfehler. <strong>Bsp. S&amp;P 500:</strong> 12,0% ± 4,1% → Bereich 7,9% bis 16,1%.</p>
+</div>
+</div>
+</div>
+<div class="chrome-bot"><span>Volatilität · Standardfehler · Annualisierung</span><span>16 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="17 Normalverteilung" data-slide-index="17" data-slide-label="17 Normalverteilung" data-slide-total="22" id="kapitel-4-slide-17">
+<div class="chrome-top"><span>4.10 · Normalverteilung</span><span>17</span></div>
+<div class="content-head">
+<div class="eyebrow">Verteilungsannahme</div>
+<h2 class="title-md" style="margin-top:14px;">Normalverteilungshypothese – und ihre Grenzen.</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="label">Eigenschaften der Normalverteilung</div>
+<ul class="clean mt-16">
+<li><span class="marker">→</span><span>Stetige Wahrscheinlichkeitsverteilung (Gauß- oder Glockenfunktion).</span></li>
+<li><span class="marker">→</span><span>Definiert durch Erwartungswert und Varianz.</span></li>
+<li><span class="marker">→</span><span>Mittelwert = Median.</span></li>
+<li><span class="marker">→</span><span><strong>Sigma-Band:</strong> 68,3% der Werte in μ ± 1σ.</span></li>
+<li><span class="marker">→</span><span>99,7% der Werte in μ ± 3σ.</span></li>
+</ul>
+<div class="callout mt-16"><span class="tag">Wichtig</span>Die Volatilität ist nur dann ein <strong>geeignetes Risikomaß</strong>, wenn die zugrundeliegenden Renditen normalverteilt sind.</div>
+</div>
+<div>
+<div class="label">Kritik am Volatilitätskonzept</div>
+<table class="grid-tbl mt-16" style="font-size:18px;">
+<tr><th></th><th>Jahr 1</th><th>Jahr 2</th><th>Jahr 3</th><th>σ</th></tr>
+<tr><td>Wertpapier A</td><td>5%</td><td>15%</td><td>10%</td><td><strong>4,1%</strong></td></tr>
+<tr><td>Wertpapier B</td><td>−15%</td><td>−15%</td><td>−15%</td><td><strong>0%</strong></td></tr>
+</table>
+<p class="body mt-16">Wertpapier A: Gesamtperformance +32,8% – riskanter (σ=4,1%). Wertpapier B: −38,6% – völlig risikolos (σ=0%)! <strong style="color:var(--bad);">Der Verlust von 38,6% kam völlig risikolos zustande!</strong></p>
+<p class="body mt-16">Volatilität ist ein <strong>symmetrisches</strong> Risikomaß – aber nur negative Abweichungen sind Risiko, positive sind Chancen.</p>
+</div>
+</div>
+</div>
+<div class="chrome-bot"><span>Normalverteilung · Kritik am Volatilitätskonzept</span><span>17 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="18 Schiefe Kurtosis" data-slide-index="18" data-slide-label="18 Schiefe Kurtosis" data-slide-total="22" id="kapitel-4-slide-18">
+<div class="chrome-top"><span>4.11 · Schiefe &amp; Kurtosis</span><span>18</span></div>
+<div class="content-head">
+<div class="eyebrow">Höhere Momente</div>
+<h2 class="title-md" style="margin-top:14px;">Vier Momente einer Verteilung.</h2>
+</div>
+<div class="content-body">
+<p class="body-lg" style="margin-bottom:16px;"><strong>4 Momente:</strong> ① Erwartungswert (Mean) · ② Volatilität · ③ Schiefe (Skewness) · ④ Wölbung (Kurtosis).</p>
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="label">③ Schiefe (Skewness)</div>
+<div class="formula-box mt-16" style="font-size:18px;">Skewness = (1/n) · Σ (r<sub>i</sub> − r̄)<sup>3</sup> / σ<sup>3</sup></div>
+<p class="body mt-16">= 0 bei symmetrischen Verteilungen. <strong>Rechtsschief (&gt;0):</strong> Erwartungswert rechts vom Median, begrenztes Downside, seltenes großes Upside. <strong>Linksschief (&lt;0):</strong> Gefahr hoher negativer Extremwerte größer.</p>
+<p class="body mt-16">Risikoaverse Anleger bevorzugen <strong>rechtsschiefe</strong> Verteilungen.</p>
+</div>
+<div>
+<div class="label">④ Wölbung (Kurtosis)</div>
+<div class="formula-box mt-16" style="font-size:18px;">Kurtosis = (1/n) · Σ (r<sub>i</sub> − r̄)<sup>4</sup> / σ<sup>4</sup></div>
+<p class="body mt-16"><strong>= 3:</strong> Normalverteilung · <strong>&gt; 3:</strong> leptokurtisch (fette Enden) · <strong>&lt; 3:</strong> platykurtisch (dünne Enden, weniger Extremwerte).</p>
+<div class="callout mt-16"><span class="tag">Kapitalmarkt-Realität</span>An Kapitalmärkten dominieren <strong>Linksschiefe</strong> und <strong>fette Enden</strong>. Folge: Mit Normalverteilungsannahme werden <strong>Risiken systematisch unterschätzt</strong>.</div>
+</div>
+</div>
+<div class="card mt-24" style="padding:20px;">
+<div class="card-eyebrow">Handlungsempfehlung Portfoliomanagement</div>
+<p class="card-body" style="font-size:22px; text-align:center;"><strong>Maximiere die ungeraden Momente (erwartete Rendite &amp; Schiefe) und minimiere die geraden Momente (Volatilität &amp; Wölbung).</strong></p>
+</div>
+</div>
+<div class="chrome-bot"><span>Schiefe · Wölbung · Höhere Momente</span><span>18 / 20</span></div>
+</section>
+
+<section class="slide-divider module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="19 Divider" data-slide-index="19" data-slide-label="19 Divider" data-slide-total="22" id="kapitel-4-slide-19">
+<div class="chrome-top"><span>Teil 08–10</span><span>19 <span class="dot">●</span></span></div>
+<div class="big-num">08</div>
+<div class="sub-label" style="top:180px;">Value-at-Risk · Kovarianz · Diversifikation</div>
+<div class="big-title">VaR<br/><em style="color:var(--accent-2);">&amp; Korrelation.</em></div>
+<div class="chrome-bot"><span>Value-at-Risk · Kovarianz · Diversifikation</span><span>19 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="20 VaR" data-slide-index="20" data-slide-label="20 VaR" data-slide-total="22" id="kapitel-4-slide-20">
+<div class="chrome-top"><span>4.12 · Value-at-Risk</span><span>20</span></div>
+<div class="content-head">
+<div class="eyebrow">Verlustmaß</div>
+<h2 class="title-md" style="margin-top:14px;">Value-at-Risk – „Wie schlimm kann es werden?“</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="label">Definition &amp; Vorteile</div>
+<p class="body mt-16">Schätzung des Verlustbetrags, der mit einer bestimmten <strong>Wahrscheinlichkeit</strong> in einem bestimmten <strong>Zeitraum</strong> nicht überschritten wird.</p>
+<ul class="clean mt-16">
+<li><span class="marker">✓</span><span>Risiko in <strong>einer einzigen Zahl</strong> ausdrückbar.</span></li>
+<li><span class="marker">✓</span><span>Leicht verständlich: „Wie schlimm kann es werden?“</span></li>
+</ul>
+<div class="callout mt-16"><span class="tag">Beispiel</span>VaR = 1,5 Mio. € pro Tag mit 5% Wahrscheinlichkeit → mit 95%iger Sicherheit wird der Tagesverlust ≤ 1,5 Mio. € sein.</div>
+</div>
+<div>
+<div class="label">Berechnung (Normalverteilung)</div>
+<div class="formula-box mt-16">VaR = −z<sub>α</sub> · σ<sub>t</sub></div>
+<p class="body mt-16">Für kurze Zeithorizonte (1 Tag, 10 Tage) ist die Annahme µ=0 legitim.</p>
+<div class="label mt-24">Beispiel: Birne-Aktie · PF = 200.000 € · σ = 30%</div>
+<div class="formula-box mt-16" style="font-size:17px;">σ<sub>1d</sub> = 0,30 / √250 = 0,019<br/>VaR<sub>95%,1d</sub> = 0,019 · 1,645 = <strong>3,12%</strong><br/>VaR<sub>95%,10d</sub> = 3,12% · √10 = <strong>9,87%</strong><br/>VaR<sub>95%,10d,PF</sub> = 9,87% · 200.000€ = <strong>19.740 €</strong></div>
+</div>
+</div>
+<div class="label mt-24">Drei VaR-Ansätze</div>
+<table class="grid-tbl mt-16" style="font-size:17px;">
+<tr><th>Ansatz</th><th>Prinzip</th><th>Vorteil</th><th>Nachteil</th></tr>
+<tr><td class="k" style="font-size:20px;">Varianz-Kovarianz</td><td>Normalverteilung mit konstantem µ und σ.</td><td>Einfach, intuitiv.</td><td>Unterschätzung von Risiken (keine fat tails).</td></tr>
+<tr><td class="k" style="font-size:20px;">Historische Simulation</td><td>Vergangene Änderungen in die Zukunft projiziert.</td><td>Auch bei Nicht-Normalverteilung anwendbar.</td><td>Vergangenheit als einziger Maßstab.</td></tr>
+<tr><td class="k" style="font-size:20px;">Monte-Carlo</td><td>Historische Werte + Zufallszahlen – unbegrenzte Szenarien.</td><td>Für beliebige Verteilungen; nahezu unbegrenzte Simulation.</td><td>Komplex, hoher Rechenaufwand.</td></tr>
+</table>
+</div>
+<div class="chrome-bot"><span>Value-at-Risk · VaR-Berechnung · Ansätze</span><span>20 / 20</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="21 Kovarianz" data-slide-index="21" data-slide-label="21 Kovarianz" data-slide-total="22" id="kapitel-4-slide-21">
+<div class="chrome-top"><span>4.13 · Kovarianz &amp; Korrelation</span><span>21</span></div>
+<div class="content-head">
+<div class="eyebrow">Zusammenhang</div>
+<h2 class="title-md" style="margin-top:14px;">Kovarianz und Korrelation – linearer Zusammenhang.</h2>
+</div>
+<div class="content-body">
+<div class="two-col" style="gap:48px;">
+<div>
+<div class="label">Kovarianz</div>
+<div class="formula-box mt-16" style="font-size:18px;">cov<sub>xy</sub> = 1/(n−1) · Σ (r<sub>i,x</sub> − r̄<sub>x</sub>)(r<sub>i,y</sub> − r̄<sub>y</sub>)</div>
+<p class="body mt-16">Beschreibt die <strong>Stärke des linearen Zusammenhangs</strong> zwischen zwei Variablen (Renditen x und y).</p>
+</div>
+<div>
+<div class="label">Korrelationskoeffizient</div>
+<div class="formula-box mt-16">ρ<sub>x,y</sub> = cov<sub>xy</sub> / (σ<sub>x</sub> · σ<sub>y</sub>)</div>
+<p class="body mt-16">Normiert die Kovarianz auf den Wertebereich <strong>−1 bis +1</strong>. ρ = +1: perfekter Gleichlauf · ρ = −1: perfekter Gegenlauf · ρ = 0: kein linearer Zusammenhang.</p>
+</div>
+</div>
+<div class="callout mt-24">
+<span class="tag">Visualisierung</span>
+                    Korrelationskoeffizienten: −1,0 · −0,9 · −0,75 · −0,3 · 0 · +0,3 · +0,75 · +0,9 · +1,0 — von perfekt negativ über unkorreliert bis perfekt positiv.
+                </div>
+</div>
+<div class="chrome-bot"><span>Kovarianz · Korrelation · ρ ∈ [−1, +1]</span><span>21 / 21</span></div>
+</section>
+
+<section class="module-slide" data-chapter-key="kapitel-4" data-chapter-short="Kapitel 4" data-chapter-title="Kapitel 4 · Mathematische &amp; statistische Grundlagen" data-module="asset-management" data-screen-label="22 Zusammenfassung" data-slide-index="22" data-slide-label="22 Zusammenfassung" data-slide-total="22" id="kapitel-4-slide-22">
+<div class="chrome-top"><span>Zusammenfassung</span><span>22 <span class="dot">●</span></span></div>
+<div class="content-head">
+<div class="eyebrow">Merksätze zum Mitnehmen</div>
+<h2 class="title-md" style="margin-top:14px;">Sechs Ankerpunkte für die Klausur.</h2>
+</div>
+<div class="content-body">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:28px 40px;">
+<div class="callout" style="padding:22px 28px; font-size:22px;">
+<span class="tag">01 · Durchschnittswerte</span>
+<strong>Arithmetisches Mittel</strong> für Einperiodenrenditen (ohne Wiederanlage). <strong>Geometrisches Mittel</strong> für Zeitreihen mit Zinseszins. Arithmetisches Mittel überschätzt Renditen systematisch.
+                    </div>
+<div class="callout" style="padding:22px 28px; font-size:22px;">
+<span class="tag">02 · Verzinsung</span>
+<strong>r<sub>diskret</sub> = e<sup>r<sub>stetig</sub></sup> − 1</strong> · <strong>ln(1+r<sub>diskret</sub>) = r<sub>stetig</sub></strong>. Bei stetigen Renditen erfolgt die Durchschnittsbildung arithmetisch.
+                    </div>
+<div class="callout" style="padding:22px 28px; font-size:22px;">
+<span class="tag">03 · Duration</span>
+<strong>Macaulay-Duration</strong> = durchschnittliche Kapitalbindungsdauer. <strong>Modified Duration</strong> = MD/(1+r<sub>M</sub>) — Elastizität des Kurses. Duration eines Portfolios = gewichtete Summe.
+                    </div>
+<div class="callout" style="padding:22px 28px; font-size:22px;">
+<span class="tag">04 · Konvexität</span>
+                        Der Kurs-Rendite-Zusammenhang ist <strong>konvex</strong>. Relative Kursänderung = <strong>−MD·Δr + 0,5·C·(Δr)²</strong>. Höhere Konvexität = wertvoller für Investoren.
+                    </div>
+<div class="callout" style="padding:22px 28px; font-size:22px;">
+<span class="tag">05 · Risikokennzahlen</span>
+<strong>Volatilität σ</strong> = symmetrisches Risikomaß. <strong>Schiefe</strong> (&gt;0 rechtsschief bevorzugt). <strong>Wölbung</strong> (&gt;3 leptokurtisch, fette Enden). An Kapitalmärkten: Linksschiefe + fat tails → Normalverteilung unterschätzt Risiken!
+                    </div>
+<div class="callout" style="padding:22px 28px; font-size:22px;">
+<span class="tag">06 · Value-at-Risk</span>
+<strong>VaR = −z<sub>α</sub> · σ<sub>t</sub></strong>. Annualisierung: σ<sub>annual.</sub> = √250·σ<sub>d</sub>. VaR<sub>T</sub> = VaR<sub>1d</sub>·√T. Kovarianz &amp; Korrelation messen linearen Zusammenhang zwischen Assets → Grundlage für Diversifikation.
+                    </div>
+</div>
+</div>
+<div class="chrome-bot"><span>Asset Management · HBW · Kapitel 4</span><span>22 / 22  ·  Ende</span></div>
+</section>
+
+<!-- MODULE_CHAPTER_END: kapitel-4 -->
