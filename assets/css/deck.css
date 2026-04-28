@@ -1538,9 +1538,9 @@ deck-stage section.is-active {
 /* Better visual affordance on module overview */
 .overview-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
-    max-width: 1320px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 1520px;
 }
 
 .overview-card {
@@ -1548,11 +1548,11 @@ deck-stage section.is-active {
     border: 1px solid var(--line);
     background: rgba(255,255,255,0.82);
     border-radius: 4px;
-    padding: 26px 28px;
+    padding: 20px 22px;
     cursor: pointer;
     color: var(--ink);
     display: flex;
-    min-height: 184px;
+    min-height: 152px;
     flex-direction: column;
     justify-content: space-between;
     transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
@@ -1566,7 +1566,7 @@ deck-stage section.is-active {
 
 .overview-kicker {
     font-family: var(--mono);
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--accent);
@@ -1574,7 +1574,7 @@ deck-stage section.is-active {
 
 .overview-title {
     font-family: var(--serif);
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.05;
     color: var(--ink);
     margin-top: 14px;
@@ -1582,7 +1582,7 @@ deck-stage section.is-active {
 
 .overview-sub {
     font-family: var(--sans);
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.35;
     color: var(--ink-2);
     margin-top: 12px;
@@ -1590,7 +1590,7 @@ deck-stage section.is-active {
 
 .overview-count {
     font-family: var(--mono);
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--muted);
