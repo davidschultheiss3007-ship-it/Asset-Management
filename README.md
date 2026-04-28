@@ -17,6 +17,7 @@ asset-management/
 │   ├── kapitel-2-traditionelle-assetklassen.html
 │   ├── kapitel-3-alternative-assetklassen.html
 │   └── kapitel-4-mathematische-statistische-grundlagen.html
+    |__ kapitel 5
 ├── docs/
 │   └── CODEX_PROMPT_ADD_TOPIC.md
 └── single-file/
