@@ -28,5 +28,12 @@ window.ASSET_MANAGEMENT_TOPICS = [
     title: "Kapitel 5 · Grundlagen der Portfoliotheorie",
     file: "topics/kapitel-5-grundlagen-der-portfoliotheorie.html",
     description: "Markowitz, Diversifikation, Effizienzkurve, Tobin-Separation, CML, CAPM und APT."
+  },
+    {
+    id: "kapitel-6",
+    short: "Kapitel 6",
+    title: "Kapitel 6 · Portfoliomanagement",
+    file: "topics/kapitel-6-portfoliomanagement.html",
+    description: "Investmentprozess, Investmentziele, Strategische Asset Allocation, Portfoliomanagement i.e.S., Finanzcontrolling und Taktische Asset Allocation."
   }
 ];
